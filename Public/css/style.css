@@ -1,0 +1,684 @@
+/* FONT */
+
+
+
+/* ROOT */
+:root{
+    --color-white:#ffffff;
+    --color-black:#000000;
+    --color-glicina:#93AAF2;
+    --color-gris-claro:#F2F2F2;
+    --color-azul-obscuro:#10213D;
+    --color-azul-500:#2F5FB3;
+    --color-amarillo-banner:#FBC022;
+    --font-montserrat:'Montserrat', sans-serif;
+
+}
+html, body{
+    overflow-x: hidden;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* __FONT */
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family: var(--font-montserrat);
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.tit{
+    font-size: 2.3em;
+    font-weight: bold;
+    margin-bottom: 1.3rem;
+}
+.tit_base{
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+.tit_encabezado{
+    font-size: 2.2em;
+    font-weight: bold;
+    color: var(--color-white);
+}
+.subTit{
+    display: table-cell;
+    text-align: center;
+    font-size: 1.2em;
+    vertical-align: middle;
+    height: 60px;
+    width: 200px;
+    font-weight: bold;
+}
+.txt{
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--color-azul-obscuro);
+}
+
+    /*BTN*/
+.btn_gen{
+    padding: 8px 24px;
+    border-radius: 25px;
+}
+.content_btn{
+    display: inline-block;
+    transition: all 0.6s ease-out;
+    transform: scale(1.05);
+    margin-top: 1.8rem;
+}
+.content_btn:hover{
+    transform: scale(1);
+}
+
+
+    /* BTN PRINCIPAL*/
+.btn_principal{
+    position: relative;
+    background-color: var(--color-glicina);
+    color: var(--color-white);
+}
+.btn_principal::before {
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 90%;
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    right: 30px;
+    z-index: -1;
+    border-radius: 30em;
+    background: var(--color-glicina);
+    filter: blur(10px) brightness(0.95);
+    transform-style: preserve-3d;
+    transition: all 0.3s ease-out;
+}
+.btn_principal:hover {
+    text-decoration: none;
+    color: var(--color-white);
+}
+.btn_principal:hover:before {
+    bottom: -5px;
+    filter: blur(10px) brightness(0.95);
+}
+
+    /* BTN SECUNDARIO*/
+.btn_secundario{
+    font-weight: 500;
+    padding: 8px 42px 8px 24px;
+    background-color: var(--color-white);
+    color: var(--color-azul-500);
+}
+
+.btn_secundario:hover {
+    text-decoration: none;
+    color: var(--color-azul-500);
+}
+.btn_secundario:hover:before {
+    bottom: -5px;
+    filter: blur(10px) brightness(0.95);
+}
+.icon_airplane{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    width: 18px!important;
+    height: 10px;
+    background-image: url("../images/icon_airplane.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.ion-ios-arrow-round-forward-outline{
+    position: relative;
+    top: 3px;
+    padding-left: 0.4rem;
+    font-size: 1.5em;
+}
+.nav-item > a{ 
+    font-size: 1em;
+    font-weight: bold;
+    opacity: .7; 
+    color: var(--color-white)!important;
+}
+.active > a{
+    position: relative; 
+    opacity: 1; 
+    color: var(--color-white)!important;
+}
+.active > a::before{
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    left: 46%;
+    margin-top: 30px;
+}
+
+
+/* __HOMEPAGE__ */
+    /* __HEADER */
+#header{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+.navbar-collapse{
+    justify-content: end;
+}
+.contacto_menu{
+    position: absolute;
+    top: 16px;
+    right: 6px;
+    display: inline-block;
+    width: auto;
+}
+.contacto_menu a{
+    font-family: var(--font-montserrat);
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: bold;
+}
+.contacto_menu a i{
+    position: relative;
+    top: 3px;
+    margin-right: 6px;
+    font-size: 1.4em;
+}
+.contacto_menu a:nth-child(1){
+    padding-right: 18px;
+    border-right: 2px solid var(--color-white);
+}
+.contacto_menu a:nth-child(2){
+    padding-left: 12px;
+}
+
+    /* __NAV*/
+.nav__logo{
+    display: inline-block;
+}
+.nav__logo img{
+    margin-top: 20px;
+    width: 100px;
+}
+a.nav__logo::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 100px;
+    height: 28px;
+    background-color:#ffffff;
+}
+
+
+    /*__SLIDER*/
+.owl-carousel.home-slider .slider-item .slider-text h2.sub_slider{
+    font-family: var(--font-montserrat);
+    font-weight: 200;
+    color: var(--color-white);
+    letter-spacing: 0;
+    text-transform: none;
+    font-size: 3.2em;
+}
+.owl-carousel.home-slider .slider-item .slider-text h1{
+    font-family: var(--font-montserrat);
+    font-size: 5rem;
+    text-transform: none;
+}
+#vector_down_slider{
+    position: absolute;
+    bottom: -2px;
+    width: auto;
+    height: 135px;
+}
+.content_arrow_down_slider{
+    text-align: center;
+    position: absolute;
+    bottom: 12px;
+}
+.icon_arrow_down_slider{
+    font-size: 2.5em;
+    color: var(--color-azul-500);
+}
+.home-slider .owl-nav button.owl-prev,.home-slider .owl-nav button.owl-next{
+    padding: 6px 13px 4px 13px!important;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+}
+.slider-item01{
+    background-image: url('../images/sophie-travel-luna-de-miel.webp');
+}
+.slider-item02{
+    background-image: url('../images/sophie-travel-conocer-el-mundo.webp');
+}
+.slider-item03{
+    background-image: url('../images/sophie-travel-aventura.webp');
+}
+.slider-item04{
+    background-image: url('../images/sophie-travel-nuevas-culturas.webp');
+}
+.slider-item05{
+    background-image: url('../images/sophie-travel-crear-recuerdos.webp');
+}
+
+    /* __BRAND */
+.cont_brand{
+    padding: 80px 0px 0px 0px;
+}    
+.cont_brand .owl-nav button.owl-prev i, .cont_brand .owl-nav button.owl-next i{
+    font-size: 1.5em;
+}
+.cont_brand .owl-nav button.owl-prev, .cont_brand .owl-nav button.owl-next{
+    background-color: var(--color-gris-claro);
+    padding: 9px 19px!important;
+    border-radius: 25px;
+    position: absolute;
+    top: 0px;
+}
+.cont_brand .owl-nav button.owl-prev{
+    left: -80px;
+}
+.cont_brand .owl-nav button.owl-next{
+    right: -80px;
+}
+
+    /* __BIENVENIDO */
+section#sec_bienvenido{
+    padding: 100px 0px 200px 0px;
+    background-image: url('../images/down-divider.svg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.col_photo_bien{
+    text-align: right;
+    padding-right: 40px;
+}
+.second_photo_bien{
+    position: absolute;
+    right: 216px;
+    bottom: -46px;
+}
+.txt_max{
+    max-width: 356px;
+}
+
+    /* __SERVICIOS */
+section#sec_servicios{
+    padding: 50px 0px 80px 0px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(242,242,242,1) 0%, rgba(255,255,255,1) 100%);
+}
+#sec_servicios .row:nth-child(1), #sec_servicios .row:nth-child(2){
+    margin-bottom: 50px;
+}
+#sec_servicios .col-md-2{
+    padding-right: 8px;
+    padding-left: 8px;
+}
+#sec_servicios img{
+    margin-bottom: 20px;
+}
+
+    /* __TESTIMONIALES */
+#sec_opiniones {
+    padding: 40px 0px 0px 0px;
+}
+.cont_testimonial .owl-nav button.owl-prev i, .cont_testimonial .owl-nav button.owl-next i{
+    font-size: 1.5em;
+}
+.cont_testimonial .owl-nav button.owl-prev, .cont_testimonial .owl-nav button.owl-next{
+    background-color: var(--color-gris-claro);
+    padding: 5px 15px!important;
+    border-radius: 25px;
+    position: absolute;
+}
+.cont_testimonial .owl-nav button.owl-prev{
+    left: -60px;
+}
+.col_txt_test{
+    text-align: left;
+}
+.col_txt_test h1{
+    margin: auto;
+    list-style: 1;
+    max-width: 160px;
+}
+.cont_testimonial .owl-nav {
+    position: absolute;
+    left: -23%;
+    top: 90px;
+}
+.test-carousel .item{
+    box-sizing: border-box;
+    padding: 28px;
+    background: var(--color-gris-claro);
+    border-radius: 16px;
+    min-height: 300px;
+}
+.test-carousel .item .comillas{
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/comillas-vector.svg');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 16px;
+}
+.test-carousel .item p{
+    font-family: var(--font-montserrat);
+    font-size: 1em;
+    font-weight: 500;
+}
+.test-carousel .item h6{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+    /* __CERTIFICACIONES */
+#sec_certificaciones{
+    padding: 100px 0px 0px 0px;
+}
+
+    /* __BANNER*/
+#sec_ban_contacto{
+    padding: 60px 0px 10px 0px;
+    background-image: url('../images/down-divider-black.svg');
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}    
+#sec_ban_contacto .col_banner_img{
+    padding: 0;    
+}
+.col_banner_img .banner{
+    position: absolute;
+    right: 0;
+    content: "";
+    width: 316px;
+    height: 260px;
+    background-image: url('../images/sophie-travel-nos-encargamos-de-todo.png');
+}
+.col_banner_txt{
+    background-color: var(--color-amarillo-banner);
+    border-radius: 0px 200px 200px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 260px;
+    padding: 0px 120px 0px 24px;
+    box-sizing: border-box;
+}
+.col_banner_txt .tit_bn{
+    font-size: 2em;
+    font-family: var(--color-white);
+    color: var(--color-white);
+    font-weight: bold;
+    line-height: 1.2;
+}
+.col_banner_txt .caption{
+    color: var(--color-white);
+    font-size: .9em;
+    margin-top: 6px;
+    font-weight: 500;
+    
+}
+.content_btn_banner{
+    display: inline-block;
+    transition: all 0.6s ease-out;
+    transform: scale(1.05);
+    margin-top: .8rem;
+}
+.content_btn_banner:hover{
+    transform: scale(1);
+}
+
+    /* FOOTER */
+#footer{
+    padding: 60px 0px;
+    background-color: var(--color-black);
+}
+#footer a{
+    color: var(--color-white);
+}
+.col_foot_txt{
+    text-align: right;
+}
+.list_footer{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.cont_foot_contacto a i{
+    position: relative;
+    top: 2px;
+    margin-right: 6px;
+    font-family: var(--font-montserrat);
+    font-size: 1.2em;
+}
+.cont_foot_contacto a:nth-child(1){
+    margin-right: 30px;
+}
+.list_footer li{
+    margin-top: 20px;   
+    margin-left: 32px;
+}
+.list_footer li a{
+    opacity: .5;
+    transition: all .3s;
+}
+.list_footer li a:hover{
+    opacity: 1;
+}
+.actF > a{
+    position: relative;
+    opacity: 1!important;
+}
+.actF > a::before{
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    left: 46%;
+    margin-top: 30px;
+}
+.row_foot2{
+    padding: 30px 0px 0px 0px;
+    color: var(--color-white);
+}
+.row_foot2 div:nth-child(2){
+    text-align: right;
+}
+
+
+/* __CONTACTO__ */
+.encabezado{
+    position: relative;
+    width: 101vw;
+}
+.encabezado > div{
+    text-align: center;
+    height: 380px;
+    align-items: center;
+}
+
+.encabezado > div::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 150px;
+    bottom: 0;
+}
+#encabezado_contacto{
+    background-image: url('../images/Sophia-travel-encabezado-contacto.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#encabezado_contacto > div::before{
+    background-image: url('../images/down-divider-bn.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+    /* FORMULARIO */
+#form_contact{
+    padding: 80px 0px 120px 0px;
+    background-image: url('../images/down-divider-black.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+#form_contact h1{
+    margin-bottom: 16px;
+}
+#form_contact p:nth-child(2){
+    margin-bottom: 16px;
+}
+.list_contact_form{
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+.list_contact_form li a{
+    color: var(--color-black);
+    font-weight: bold;
+}
+.list_contact_form li a i{
+    position: relative;
+    top: 4px;
+    font-size: 1.5em;
+    margin-right: 8px;
+}
+#formulario input, #formulario textarea{
+    border: 2px solid var(--color-gris-claro);
+}
+#formulario input[type=text], #formulario input[type=email], #formulario input[type=tel]{
+    background-color: var(--color-gris-claro);
+    color: var(--color-black);
+    border-radius: 22px;
+    font-family: var(--font-montserrat);
+    font-size: 0.9em;
+    font-weight: 500;
+    width: 100%;
+    height: 44px;
+    padding: 0px 16px;
+    margin-bottom: 16px;
+}
+#formulario textarea{
+    font-family: var(--font-montserrat);
+    font-size: 0.9em;
+    font-weight: 500;
+    background-color: var(--color-gris-claro);
+    border-radius: 22px;
+    width: 100%;
+    height: 200px;
+    padding: 16px;
+}
+#formulario input[type=submit]{
+    padding: 8px 24px;
+    border-radius: 25px;
+    margin-top: 16px;
+    color:var(--color-white);
+    background-color: var(--color-glicina);
+}
+
+/*MENSAJE DE ERROR*/
+/*
+.formulario__input-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+.formulario__input-error-activo {
+	display: block;
+}
+.formulario__validacion-estado {
+    position: absolute;
+    right: 28px;
+    top: 8px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+.formulario__mensaje-activo {
+	display: block;
+}
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+.formulario__mensaje-exito-activo {
+	display: block;
+}*/
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+/*
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}*/
+
+
+/* __BTN_WHATSAPP */
+#btn_whatsApp{
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 99;
+}
+#btn_whatsApp img{
+    width: 60px;
+    height: auto;
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+#btn_whatsApp img:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* __RESPONSIVE */
+@media all and (min-width:1400px){
+    #vector_down_slider{
+        position: absolute;
+        bottom: -2px;
+        width: 101%;
+        height: auto;
+    }
+}
