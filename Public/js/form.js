@@ -74,8 +74,10 @@ formulario.addEventListener('submit', e=>{
     e.preventDefault();
 
     // const terminos = document.getElementById('terminos');
-    if(campos.nombre && campos.correo && campos.telefono ){
-        formulario.reset();
+    if(campos.nombre && campos.correo && campos.telefono){
+
+
+
 
         document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
         setTimeout(() => {
@@ -97,15 +99,15 @@ formulario.addEventListener('submit', e=>{
         //ENVIAMOS LOS DATOS A PHP
         let datos = new FormData(formulario);
         //creamos un objeto
-        peticion = {
-            method: 'POST',
-            body: datos,
+        let peticion = {
+            method:'POST',
+            body:datos,
         }
         fetch('Public/php/formulario.php', peticion)
         .then(respuesta => respuesta.json())
         .then(respuesta =>{
     
-            for(let resultado in respuesta){
+            for(const resultado in respuesta){
                 let padre = document.querySelector('#'+resultado);
                 padre.classList.add('resaltar');
                 let txt = document.createElement('p');
@@ -117,7 +119,10 @@ formulario.addEventListener('submit', e=>{
     
         }).catch(error => console.log('Error', error));
         //FIN DATOS PHP
+        formulario.reset();
         // return true;
+
+      
     } else {
         document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
         setTimeout(() => {

@@ -22,16 +22,16 @@
         $respuesta += ['telefono' => 'Ingresa un telefono'];
         $bandera = false;
     }
-    if($mensaje == ""){
-        $respuesta += ['mensaje' => 'Ingresa un mensaje'];
-        $bandera = false;
-    }
+    // if($mensaje == ""){
+    //     $respuesta += ['mensaje' => 'Ingresa un mensaje'];
+    //     $bandera = false;
+    // }
 
     echo json_encode($respuesta);
 
     if($bandera){
         //ENVIAMOS EL FORMULARIO
-        echo('DATOS ENVIADOS CON EXITO');
+        echo('DATOS ENVIADOS CON EXITO' . $nombre . $correo . $telefono . $mensaje);
 
     }
 

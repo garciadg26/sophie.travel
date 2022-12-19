@@ -507,6 +507,9 @@ section#sec_servicios{
 .encabezado{
     position: relative;
     width: 101vw;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 .encabezado > div{
     text-align: center;
@@ -521,18 +524,20 @@ section#sec_servicios{
     height: 150px;
     bottom: 0;
 }
-#encabezado_contacto{
-    background-image: url('../images/Sophia-travel-encabezado-contacto.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-#encabezado_contacto > div::before{
+.encabezado > div::before{
     background-image: url('../images/down-divider-bn.svg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
+
+#encabezado_contacto{
+    background-image: url('../images/Sophia-travel-encabezado-contacto.jpg');
+}
+#encabezado_nosotros{
+    background-image: url('../images/Sophia-travel-encabezado-nosotros.jpg');
+}
+
     /* FORMULARIO */
 #form_contact{
     padding: 80px 0px 120px 0px;
@@ -561,6 +566,9 @@ section#sec_servicios{
     top: 4px;
     font-size: 1.5em;
     margin-right: 8px;
+}
+.ion-ios-mail-outline:before, .ion-ios-call-outline:before{
+    font-weight: 900!important;
 }
 #formulario input, #formulario textarea{
     border: 2px solid var(--color-gris-claro);
@@ -596,7 +604,7 @@ section#sec_servicios{
 }
 
 /*MENSAJE DE ERROR*/
-/*
+
 .formulario__input-error {
     font-size: 12px;
     margin-bottom: 0;
@@ -631,10 +639,10 @@ section#sec_servicios{
 }
 .formulario__mensaje-exito-activo {
 	display: block;
-}*/
+}
 
 /* ----- -----  Estilos para Validacion ----- ----- */
-/*
+
 .formulario__grupo-correcto .formulario__validacion-estado {
 	color: #1ed12d;
 	opacity: 1;
@@ -651,7 +659,7 @@ section#sec_servicios{
 
 .formulario__grupo-incorrecto .formulario__input {
 	border: 3px solid #bb2929;
-}*/
+}
 
 
 /* __BTN_WHATSAPP */
