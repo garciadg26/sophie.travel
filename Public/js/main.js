@@ -11,6 +11,6 @@ $(document).ready(function(){
         console.log('Estoy en la página de contacto');
     }
 
-
+    
 
 });

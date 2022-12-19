@@ -46,6 +46,11 @@ a{
     font-weight: bold;
     color: var(--color-white);
 }
+.subTit_base{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
 .subTit{
     display: table-cell;
     text-align: center;
@@ -330,7 +335,7 @@ section#sec_servicios{
 
     /* __TESTIMONIALES */
 #sec_opiniones {
-    padding: 40px 0px 0px 0px;
+    padding: 40px 0px 100px 0px;
 }
 .cont_testimonial .owl-nav button.owl-prev i, .cont_testimonial .owl-nav button.owl-next i{
     font-size: 1.5em;
@@ -386,12 +391,12 @@ section#sec_servicios{
 
     /* __CERTIFICACIONES */
 #sec_certificaciones{
-    padding: 100px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
     /* __BANNER*/
 #sec_ban_contacto{
-    padding: 60px 0px 10px 0px;
+    padding: 100px 0px 10px 0px;
     background-image: url('../images/down-divider-black.svg');
     background-position: center bottom;
     background-size: contain;
@@ -504,6 +509,9 @@ section#sec_servicios{
 
 
 /* __CONTACTO__ */
+#encabezado_contacto{
+    background-image: url('../images/Sophia-travel-encabezado-contacto.webp');
+}
 .encabezado{
     position: relative;
     width: 101vw;
@@ -531,14 +539,165 @@ section#sec_servicios{
     background-size: cover;
 }
 
-#encabezado_contacto{
-    background-image: url('../images/Sophia-travel-encabezado-contacto.jpg');
-}
+/* __NOSOTROS__ */
 #encabezado_nosotros{
-    background-image: url('../images/Sophia-travel-encabezado-nosotros.jpg');
+    background-image: url('../images/Sophia-travel-encabezado-nosotros.webp');
+}
+#descripcion_nost{
+    position: relative;
+    top: -60px;
+}
+.second_photo_left {
+    position: absolute;
+    right: 216px;
+    bottom: -60px;
+}
+.second_photo_right {
+    position: absolute;
+    right: 216px;
+    bottom: 64px;
+}
+.txt_desc{
+    margin-bottom: 16px;
+}
+.desc_left{
+    margin-top: 60px;
+}
+.desc_right{
+    margin-top: 32px;
+}
+.desc_row2{
+    margin-top: 60px;
+}
+    /*DIVIDER*/
+.divider{
+    width: 101vw;
+    height: 150px;
+    margin-top: 40px;
+    background-image: url('../images/down-divider.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-    /* FORMULARIO */
+    /* VALORES */
+#valores{
+    padding: 40px 0px 120px 0px;
+    background-color: var(--color-gris-claro);
+    /* background-color: var(--color-azul-500); */
+    background-image: url('../images/down-divider-black.svg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#valores .cont_valores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0px 30px;
+    min-height: 140px;
+    border-radius: 100px;
+    background-color: var(--color-white);
+    margin-bottom: 20px;
+}
+#valores .tit_base{
+    margin-bottom: 28px;
+}
+#valores .cont_valores p.txt{
+    margin: 6px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/* __NUESTROS DESTINOS__ */
+#encabezado_destinos{
+    background-image: url('../images/Sophia-travel-encabezado-nuestros-destinos.webp');
+}
+#destinos{
+    padding: 40px 0px 80px 0px;
+}
+.dest_row1, .dest_row2{
+    margin-bottom: 60px;
+}
+.dest_row3{
+    margin-bottom: 20px;
+}
+#destinos .row > div{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+#destinos .subTit_base{
+    margin-top: 20px;
+}
+#destinos{
+    background-image: url('../images/down-divider-black.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+
+/* __PREGUNTAS FRECUENTES__ */
+#encabezado_preguntas{
+    background-image: url('../images/Sophia-travel-encabezado-preguntas-frecuentes.jpg');
+}
+#preguntas{
+    padding: 40px 0px 120px;
+    background-image: url('../images/down-divider-black.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+#accordionExample .card{
+    border: none;
+    border-bottom: 2px dashed var(--color-azul-500);
+}
+.card-header{
+    padding: 20px 0px 20px 16px;
+    margin-bottom: 0;
+    background-color: var(--color-white);
+    border-bottom: none;
+}
+.card-header .btn{
+    padding: 0px;
+    font-size: 1.2rem;
+    color: var(--color-black);
+    font-weight: bold;
+}
+.card-body{
+    padding: 0px 0px 24px 16px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.accordion .card .ion-ios-arrow-round-down {
+    color: var(--color-azul-500);
+    float: right;
+    margin-right: 20px;
+    font-size: 1.2em;
+}
+.accordion .card .ion-ios-arrow-round-down::before{
+    font-weight: bold;
+}
+.accordion .card .card-header button:not(.collapsed) .rotate-icon {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+/* __AVISO DE PRIVACIDAD__ */
+#encabezado_privacidad{
+    background-image: url('../images/Sophia-travel-encabezado-aviso-privacidad.jpg');
+}
+#aviso{
+    padding: 40px 0px 120px 0px;
+    background-image: url('../images/down-divider-black.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+/* __FORMULARIO__ */
 #form_contact{
     padding: 80px 0px 120px 0px;
     background-image: url('../images/down-divider-black.svg');
@@ -603,8 +762,7 @@ section#sec_servicios{
     background-color: var(--color-glicina);
 }
 
-/*MENSAJE DE ERROR*/
-
+/* __MENSAJE DE ERROR__ */
 .formulario__input-error {
     font-size: 12px;
     margin-bottom: 0;
