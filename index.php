@@ -6,68 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sophie Travel | Agencia de viajes</title>
     <meta name="description" content="Sophie Travel® es una agencia de viajes líder en su ramo">
-    <!-- BOOSTRAP -->
-    <link rel="stylesheet" href="Public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Public/css/owl.carousel.min.css">
-    <!-- STYLE -->
-    <link rel="stylesheet" href="Public/css/slide.css">
-    <link rel="stylesheet" href="Public/css/style.css">
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- ICONS -->
-    <link rel="stylesheet" href="Public/css/ionicons.min.css">
+    <?php include('Public/include/head.php') ?>
 </head>
 <body>
-
-<!-- HEADER -->
-<header class="header" id="header">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a href="#" class="nav__logo">
-                <picture>
-                    <source srcset="Public/images/logotipo-sophie-travel.webp" type="images/webp">
-                    <source srcset="Public/images/logotipo-sophie-travel.png" type="images/jpeg">
-                    <img src="Public/images/logotipo-sophie-travel.png" alt="logotipo sophie travel">
-                </picture>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <div class="row">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Destino</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">FAQ’s</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
-                        </li>
-                        <li>
-                            <div class="contacto_menu">
-                                <a href="mailto:contacto@sophie.travel"><i class="icon ion-ios-mail-outline"></i> contacto@sophie.travel</a>
-                                <a href="#"><i class="icon ion-ios-call-outline"></i> (442) 810 8085</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
-</header>
-
+    
+    
+    
+<?php include('Public/include/nav.php') ?>
 <!-- SLIDER -->
 <div class="home-slider owl-carousel js-fullheight">
     <div class="slider-item js-fullheight slider-item01">
@@ -80,7 +25,9 @@
                     <h1 class="tit_slider">luna de miel</h1>
                     <h2 class="sub_slider">de tus sueños?</h2><br>
                     <div class="content_btn">
-                        <a class="btn_gen btn_secundario" href="#">Ver destinos <span class="icon_airplane"></span></a>
+                        <a class="btn_gen btn_secundario" href="destinos.php">Ver destinos 
+                            <img class="icon_airplane" src="Public/images/icon_airplane.svg" alt="">
+                        </a>
                     </div>
               </div>
             </div>
@@ -97,7 +44,9 @@
                     <h2 class="sub_slider">¿Estas listo para </h2>
                     <h1 class="tit_slider">Conocer el mundo?</h1>
                     <div class="content_btn">
-                        <a class="btn_gen btn_secundario" href="#">Ver destinos <span class="icon_airplane"></span></a>
+                        <a class="btn_gen btn_secundario" href="destinos.php">Ver destinos 
+                            <img class="icon_airplane" src="Public/images/icon_airplane.svg" alt="">
+                        </a>
                     </div>
               </div>
             </div>
@@ -114,7 +63,9 @@
                     <h2 class="sub_slider">¿Estas listo para </h2>
                     <h1 class="tit_slider">la aventura</h1>
                     <div class="content_btn">
-                        <a class="btn_gen btn_secundario" href="#">Ver destinos <span class="icon_airplane"></span></a>
+                        <a class="btn_gen btn_secundario" href="destinos.php">Ver destinos 
+                            <img class="icon_airplane" src="Public/images/icon_airplane.svg" alt="">
+                        </a>    
                     </div>
               </div>
             </div>
@@ -131,7 +82,9 @@
                     <h2 class="sub_slider">¿Estas listo para conocer </h2>
                     <h1 class="tit_slider">nuevas culturas?</h1>
                     <div class="content_btn">
-                        <a class="btn_gen btn_secundario" href="#">Ver destinos <span class="icon_airplane"></span></a>
+                        <a class="btn_gen btn_secundario" href="destinos.php">Ver destinos 
+                            <img class="icon_airplane" src="Public/images/icon_airplane.svg" alt="">
+                        </a>
                     </div>
               </div>
             </div>
@@ -149,7 +102,9 @@
                     <h1 class="tit_slider">crear recuerdos</h1>
                     <h2 class="sub_slider">con tu familia?</h2><br>
                     <div class="content_btn">
-                        <a class="btn_gen btn_secundario" href="#">Ver destinos <span class="icon_airplane"></span></a>
+                        <a class="btn_gen btn_secundario" href="destinos.php">Ver destinos 
+                            <img class="icon_airplane" src="Public/images/icon_airplane.svg" alt="">
+                        </a>
                     </div>
               </div>
             </div>
@@ -167,7 +122,7 @@
             <path d="M-510.82-111.541v-.4c-62.268,0-52.171-39.394-89.2-39.394s-26.927,39.394-89.2,39.394v.4a2176.87,2176.87,0,0,1-610.8-112.818V-88.121h1400V-224.359A2176.883,2176.883,0,0,1-510.82-111.541Z" transform="translate(1300.014 224.359)" fill="#fff"/>
         </svg>
         <div class="content_arrow_down_slider">
-            <a href="#sec_bienvenido" class="icon_arrow_down_slider">
+            <a href="#sec_marcas_caroucel" class="icon_arrow_down_slider">
                 <i class="icon ion-ios-arrow-round-down"></i>
             </a>
         </div>
@@ -178,25 +133,151 @@
             <div class="col-md-12">
                 <div class="brand-carousel owl-carousel owl-theme">
                     <div class="item">
-                        <img src="Public/images/logos/logotipo-sandals.jpg" alt="">
+                        <picture>
+                            <source srcset="Public/images/logos/logotipo-sandals.webp" type="images/webp">
+                            <source srcset="Public/images/logos/logotipo-sandals.jpg" type="images/jpeg">
+                            <img src="Public/images/logos/logotipo-sandals.jpg" alt="Sophie Travel agencia de viajes - Logotipo sandals">
+                        </picture>
                     </div>
                     <div class="item">
-                        <img src="Public/images/logos/logotipo-velas-resort.jpg" alt="">
+                        <picture>
+                            <source srcset="Public/images/logos/logotipo-velas-resort.webp" type="images/webp">
+                            <source srcset="Public/images/logos/logotipo-velas-resort.jpg" type="images/jpeg">
+                            <img src="Public/images/logos/logotipo-velas-resort.webp" alt="Sophie Travel agencia de viajes - Logotipo sandals">
+                        </picture>
                     </div>
                     <div class="item">
-                        <img src="Public/images/logos/logotipo-club-med.jpg" alt="">
+                        <picture>
+                            <source srcset="Public/images/logos/logotipo-club-med.webp" type="images/webp">
+                            <source srcset="Public/images/logos/logotipo-club-med.jpg" type="images/jpeg">
+                            <img src="Public/images/logos/logotipo-club-med.jpg" alt="Sophie Travel agencia de viajes - Logotipo club med">
+                        </picture>
                     </div>
                     <div class="item">
-                        <img src="Public/images/logos/logotipo-hotel-xcaret-mexico.jpg" alt="">
+                        <picture>
+                            <source srcset="Public/images/logos/logotipo-hotel-xcaret-mexico.webp" type="images/webp">
+                            <source srcset="Public/images/logos/logotipo-hotel-xcaret-mexico.jpg" type="images/jpeg">
+                            <img src="Public/images/logos/logotipo-hotel-xcaret-mexico.jpg" alt="Sophie Travel agencia de viajes - Logotipo hotel xcaret méxcio">
+                        </picture>
                     </div>
                     <div class="item">
-                        <img src="Public/images/logos/logotipo-hard-rock-hotel-vallarta.jpg" alt="">
+                        <picture>
+                            <source srcset="Public/images/logos/logotipo-hard-rock-hotel-vallarta.webp" type="images/webp">
+                            <source srcset="Public/images/logos/logotipo-hard-rock-hotel-vallarta.jpg" type="images/jpeg">
+                            <img src="Public/images/logos/logotipo-hard-rock-hotel-vallarta.jpg" alt="Sophie Travel agencia de viajes - Logotipo hard rock hotel vallarta">
+                        </picture>
                     </div>
                     <div class="item">
-                        <img src="Public/images/logos/logotipo-palace-resorts.jpg" alt="">
+                        <picture>
+                            <source srcset="Public/images/logos/logotipo-palace-resorts.webp" type="images/webp">
+                            <source srcset="Public/images/logos/logotipo-palace-resorts.jpg" type="images/jpeg">
+                            <img src="Public/images/logos/logotipo-palace-resorts.jpg" alt="Sophie Travel agencia de viajes - Logotipo palace resorts">
+                        </picture>
                     </div>
                     <div class="item">
-                        <img src="Public/images/logos/logotipo-iberostar-hotels-resorts.jpg" alt="">
+                        <picture>
+                            <source srcset="Public/images/logos/logotipo-iberostar-hotels-resorts.webp" type="images/webp">
+                            <source srcset="Public/images/logos/logotipo-iberostar-hotels-resorts.jpg" type="images/jpeg">
+                            <img src="Public/images/logos/logotipo-iberostar-hotels-resorts.jpg" alt="Sophie Travel agencia de viajes - Logotipo iberostar hotels resorts">
+                        </picture>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <source srcset="Public/images/logos/logotipo-marival-resorts.webp" type="images/webp">
+                            <source srcset="Public/images/logos/logotipo-marival-resorts.jpg" type="images/jpeg">
+                            <img src="Public/images/logos/logotipo-marival-resorts.jpg" alt="Sophie Travel agencia de viajes - Logotipo marival resorts">
+                        </picture>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <source srcset="Public/images/logos/logotipo-melia-hotels-international.webp" type="images/webp">
+                            <source srcset="Public/images/logos/logotipo-melia-hotels-international.jpg" type="images/jpeg">
+                            <img src="Public/images/logos/logotipo-melia-hotels-international.jpg" alt="Sophie Travel agencia de viajes - Logotipo melia hotels international">
+                        </picture>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <source srcset="Public/images/logos/logotipo-dreams-resort-spa.webp" type="images/webp">
+                            <source srcset="Public/images/logos/logotipo-dreams-resort-spa.jpg" type="images/jpeg">
+                            <img src="Public/images/logos/logotipo-dreams-resort-spa.jpg" alt="Sophie Travel agencia de viajes - Logotipo dreams resort spa">
+                        </picture>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <source srcset="Public/images/logos/logotipo-las-brisas.webp" type="images/webp">
+                            <source srcset="Public/images/logos/logotipo-las-brisas.jpg" type="images/jpeg">
+                            <img src="Public/images/logos/logotipo-las-brisas.jpg" alt="Sophie Travel agencia de viajes - Logotipo las brisas">
+                        </picture>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <source srcset="Public/images/logos/logotipo-disney.webp" type="images/webp">
+                            <source srcset="Public/images/logos/logotipo-disney.jpg" type="images/jpeg">
+                            <img src="Public/images/logos/logotipo-disney.jpg" alt="Sophie Travel agencia de viajes - Logotipo disneyland resort">
+                        </picture>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <source srcset="Public/images/logos/logotipo-aeromexico.webp" type="images/webp">
+                            <source srcset="Public/images/logos/logotipo-aeromexico.jpg" type="images/jpeg">
+                            <img src="Public/images/logos/logotipo-aeromexico.jpg" alt="Sophie Travel agencia de viajes - Logotipo aeroméxico">
+                        </picture>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <source srcset="Public/images/logos/logotipo-volaris.webp" type="images/webp">
+                            <source srcset="Public/images/logos/logotipo-volaris.jpg" type="images/jpeg">
+                            <img src="Public/images/logos/logotipo-volaris.jpg" alt="Sophie Travel agencia de viajes - Logotipo volaris">
+                        </picture>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <source srcset="Public/images/logos/logotipo-magnicharters.webp" type="images/webp">
+                            <source srcset="Public/images/logos/logotipo-magnicharters.jpg" type="images/jpeg">
+                            <img src="Public/images/logos/logotipo-magnicharters.jpg" alt="Sophie Travel agencia de viajes - Logotipo magnicharters">
+                        </picture>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <source srcset="Public/images/logos/logotipo-special-tours.webp" type="images/webp">
+                            <source srcset="Public/images/logos/logotipo-special-tours.jpg" type="images/jpeg">
+                            <img src="Public/images/logos/logotipo-special-tours.jpg" alt="Sophie Travel agencia de viajes - Logotipo special tours">
+                        </picture>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <source srcset="Public/images/logos/logotipo-surland.webp" type="images/webp">
+                            <source srcset="Public/images/logos/logotipo-surland.jpg" type="images/jpeg">
+                            <img src="Public/images/logos/logotipo-surland.jpg" alt="Sophie Travel agencia de viajes - Logotipo surland">
+                        </picture>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <source srcset="Public/images/logos/logotipo-punta-de-este.webp" type="images/webp">
+                            <source srcset="Public/images/logos/logotipo-punta-de-este.jpg" type="images/jpeg">
+                            <img src="Public/images/logos/logotipo-punta-de-este.jpg" alt="Sophie Travel agencia de viajes - Logotipo punta del este">
+                        </picture>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <source srcset="Public/images/logos/logotipo-petra.webp" type="images/webp">
+                            <source srcset="Public/images/logos/logotipo-petra.jpg" type="images/jpeg">
+                            <img src="Public/images/logos/logotipo-petra.jpg" alt="Sophie Travel agencia de viajes - Logotipo petra">
+                        </picture>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <source srcset="Public/images/logos/logotipo-royal-Caribbean-interntional.webp" type="images/webp">
+                            <source srcset="Public/images/logos/logotipo-royal-Caribbean-interntional.jpg" type="images/jpeg">
+                            <img src="Public/images/logos/logotipo-royal-Caribbean-interntional.jpg" alt="Sophie Travel agencia de viajes - Logotipo royal caribbean international">
+                        </picture>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <source srcset="Public/images/logos/logotipo-celebrity-cruises.webp" type="images/webp">
+                            <source srcset="Public/images/logos/logotipo-celebrity-cruises.jpg" type="images/jpeg">
+                            <img src="Public/images/logos/logotipo-celebrity-cruises.jpg" alt="Sophie Travel agencia de viajes - Logotipo celebrity cruises">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -226,7 +307,7 @@
                     <h3 class="tit">¡Bienvenido!</h3>
                     <p class="txt txt_max">Sophie Travel® somos una agencia de viajes líder en su ramo, especialistas en Lunas de Miel y viajes familiares alrededor del mundo y en continuo crecimiento, con presencia que se distingue por el servicio personalizado a sus clientes.</p>
                     <div class="content_btn">
-                        <a class="btn_gen btn_principal" href="#">Conócenos <i class="icon ion-ios-arrow-round-forward-outline"></i></a>
+                        <a class="btn_gen btn_principal" href="nosotros.php">Conócenos <i class="icon ion-ios-arrow-round-forward-outline"></i></a>
                     </div>
                 </article>
             </div>
@@ -244,7 +325,7 @@
         </div>
         <!-- PRIMERA FILA | SERVICIOS -->
         <div class="row text-center">
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-4 col-6">
                 <picture>
                     <source srcset="Public/images/sophie-travel-luna-de-miel.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-luna-de-miel.png" type="images/png">
@@ -252,7 +333,7 @@
                 </picture>
                 <p class="subTit">Luna de miel</p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-4 col-6">
                 <picture>
                     <source srcset="Public/images/sophie-travel-viajes-personalizados.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-viajes-personalizados.png" type="images/png">
@@ -260,7 +341,7 @@
                 </picture>
                 <p class="subTit">Viajes personalizados</p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-4 col-6">
                 <picture>
                     <source srcset="Public/images/sophie-travel-vacaciones-familiares.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-vacaciones-familiares.png" type="images/png">
@@ -268,7 +349,7 @@
                 </picture>
                 <p class="subTit">Vacaciones familiares</p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-4 col-6">
                 <picture>
                     <source srcset="Public/images/sophie-travel-tours-y-circuitos.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-tours-y-circuitos.png" type="images/png">
@@ -276,7 +357,7 @@
                 </picture>
                 <p class="subTit">Tours y circuitos</p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-4 col-6">
                 <picture>
                     <source srcset="Public/images/sophie-travel-grupos.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-grupos.png" type="images/png">
@@ -284,7 +365,7 @@
                 </picture>
                 <p class="subTit">Grupos</p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-4 col-6">
                 <picture>
                     <source srcset="Public/images/sophie-travel-trenes.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-trenes.png" type="images/png">
@@ -295,7 +376,7 @@
         </div>
         <!-- SEGUNDA FILA | SERVICIOS -->
         <div class="row text-center">
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-4 col-6">
                 <picture>
                     <source srcset="Public/images/sophie-travel-vuelos.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-vuelos.png" type="images/png">
@@ -303,7 +384,7 @@
                 </picture>
                 <p class="subTit">Vuelos</p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-4 col-6">
                 <picture>
                     <source srcset="Public/images/sophie-travel-cruceros.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-cruceros.png" type="images/png">
@@ -311,7 +392,7 @@
                 </picture>
                 <p class="subTit">Cruceros</p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-4 col-6">
                 <picture>
                     <source srcset="Public/images/sophie-travel-traslados.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-traslados.png" type="images/png">
@@ -319,7 +400,7 @@
                 </picture>
                 <p class="subTit">Translados</p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-4 col-6">
                 <picture>
                     <source srcset="Public/images/sophie-travel-eventos-deportivos.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-eventos-deportivos.png" type="images/png">
@@ -327,7 +408,7 @@
                 </picture>
                 <p class="subTit">Eventos deportivos</p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-4 col-6">
                 <picture>
                     <source srcset="Public/images/sophie-travel-hospedaje.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-hospedaje.png" type="images/png">
@@ -335,7 +416,7 @@
                 </picture>
                 <p class="subTit">Hospedaje</p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-4 col-6">
                 <picture>
                     <source srcset="Public/images/sophie-travel-nacional-e-internacional.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-nacional-e-internacional.png" type="images/png">
@@ -347,7 +428,7 @@
         <div class="row text-center">
             <div class="col-md-12">
                 <div class="content_btn">
-                    <a class="btn_gen btn_principal" href="#">Contáctanos <i class="icon ion-ios-arrow-round-forward-outline"></i></a>
+                    <a class="btn_gen btn_principal" href="contacto.php">Contáctanos <i class="icon ion-ios-arrow-round-forward-outline"></i></a>
                 </div>
             </div>
         </div>
@@ -429,58 +510,21 @@
     </div>
 </section>
 
-<!-- CERTIFICACIONES -->
-<section id="sec_certificaciones">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-4">
-                <h1 class="tit_base">Certificaciones</h1>
-            </div>
-            <div class="col-md-2">
-                <picture>
-                    <source srcset="Public/images/logotipo-afeet.webp" type="images/webp">
-                    <source srcset="Public/images/logotipo-afeet.jpg" type="images/jpeg">
-                    <img class="img-fluid" src="Public/images/logotipo-afeet.jpg" alt="Sophie Travel agencia de viajes certificación por afeet" loading="lazy">
-                </picture>
-            </div>
-            <div class="col-md-2">
-                <picture>
-                    <source srcset="Public/images/logotipo-safe-travels.webp" type="images/webp">
-                    <source srcset="Public/images/logotipo-safe-travels.jpg" type="images/jpeg">
-                    <img class="img-fluid" src="Public/images/logotipo-safe-travels.jpg" alt="Sophie Travel agencia de viajes certificación por safe travels" loading="lazy">
-                </picture>
-            </div>
-            <div class="col-md-2">
-                <picture>
-                    <source srcset="Public/images/logotipo-distintivo-programa-moderniza.webp" type="images/webp">
-                    <source srcset="Public/images/logotipo-distintivo-programa-moderniza.jpg" type="images/jpeg">
-                    <img class="img-fluid" src="Public/images/logotipo-distintivo-programa-moderniza.jpg" alt="Sophie Travel agencia de viajes distintivo por el programa moderniza" loading="lazy">
-                </picture>
-            </div>
-            <div class="col-md-2">
-                <picture>
-                    <source srcset="Public/images/logotipo-distintivo-programa-moderniza.webp" type="images/webp">
-                    <source srcset="Public/images/logotipo-distintivo-programa-moderniza.jpg" type="images/jpeg">
-                    <img class="img-fluid" src="Public/images/logotipo-registro-nacional-de-turismo.jpg" alt="Sophie Travel agencia de viajes con registro nacional de turismo" loading="lazy">
-                </picture>
-            </div>
-        </div>
-    </div>
-</section>
+<?php include('Public/include/certificaciones.php') ?>
 
 <!-- BANNER CONTACTO -->
 <section id="sec_ban_contacto">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 offset-md-1 col_banner_img">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-12 col_banner_img">
                 <div class="banner"></div>
             </div>
-            <div class="col-md-6 col_banner_txt">
+            <div class="col-xl-8 col-lg-8 col-md-8 col-12 col_banner_txt">
                 <div>
                     <h2 class="tit_bn">Nos encargamos de todo, desde el comienzo del sueño hasta su regreso a casa.</h2>
                     <p class="caption">Hacemos de su viaje una experiencia placentera e inolvidable.</p>
                     <div class="content_btn_banner">
-                        <a class="btn_gen btn_principal" href="#">Contáctanos <i class="icon ion-ios-arrow-round-forward-outline"></i></a>
+                        <a class="btn_gen btn_principal" href="contacto.php">Contáctanos <i class="icon ion-ios-arrow-round-forward-outline"></i></a>
                     </div>
                 </div>
             </div>
@@ -488,63 +532,6 @@
     </div>
 </section>
 
-<footer id="footer">
-    <div class="container">
-        <!-- PRIMERA FILA -->
-        <div class="row">
-            <div class="col-md-3 offset-md-1 text-center">
-                <img class="img-fluid" src="Public/images/logotipo-sophie-travel-bn.svg" alt="Sophie Travel agencia de viajes con registro nacional de turismo" loading="lazy">
-            </div>
-            <div class="col-md-7 col_foot_txt">
-                <div class="row">
-                    <div class="col-md-12 cont_foot_contacto">
-                        <a href="mailto:contacto@sophie.travel"><i class="icon ion-ios-mail-outline"></i> contacto@sophie.travel</a>
-                        <a href=""><i class="icon ion-ios-call-outline"></i> (442) 810 8085</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <nav class="nav_footer">
-                            <ul class="list_footer">
-                                <li class="item_nav_footer actF"><a href="#">Inicio</a></li>
-                                <li class="item_nav_footer"><a href="#">Nosotros</a></li>
-                                <li class="item_nav_footer"><a href="#">Destino</a></li>
-                                <li class="item_nav_footer"><a href="#">Servicios</a></li>
-                                <li class="item_nav_footer"><a href="#">FAQ’s</a></li>
-                                <li class="item_nav_footer"><a href="#">Contacto</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- SEGUNDA FILA -->
-        <div class="row row_foot2">
-            <div class="col-md-3 text-center offset-md-1">
-                <p>&reg; <script>document.write(new Date().getFullYear());</script>, Derechos Reservados </p>
-            </div>
-            <div class="col-md-7">
-                <a href="#">Aviso de privacidad</a>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<div id="btn_whatsApp">
-    <a href="#">
-        <img src="Public/images/btn-whatsapp.png" alt="">
-    </a>
-</div>
-
-    <!-- JQUERY -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- SLIDE -->
-    <script src="Public/js/owl.carousel.min.js" type="text/javascript"></script>
-    <script src="Public/js/slider.js" type="text/javascript"></script>
-    <script src="Public/js/bootstrap.min.js" type="text/javascript"></script>
-    <!-- MAIN -->
-    <script src="Public/js/main.js" type="text/javascript"></script>
-    <script src="Public/js/caroucel.js" type="text/javascript"></script>
-
-</body>
-</html>
+<?php include('Public/include/whatsapp.php') ?>
+<?php include('Public/include/foot.php') ?>
+<?php include('Public/include/footer.php') ?>

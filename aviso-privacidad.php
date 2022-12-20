@@ -5,20 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas frecuentes - Sophie Travel | Agencia de viajes</title>
-    <meta name="description" content="Sophie Travel® es una agencia de viajes líder en su ramo">
-    <!-- BOOSTRAP -->
-    <link rel="stylesheet" href="Public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Public/css/owl.carousel.min.css">
-    <!-- STYLE -->
-    <link rel="stylesheet" href="Public/css/slide.css">
-    <link rel="stylesheet" href="Public/css/style.css?ver=1.0.0">
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- ICONS -->
-    <link rel="stylesheet" href="Public/css/ionicons.min.css">
+    <?php include('Public/include/head.php'); ?>
 </head>
 <body>
+    <?php include('Public/include/nav.php') ?>
     <!-- ENCABEZADO -->
     <section id="encabezado_privacidad" class="encabezado">
         <div class="row">
@@ -55,13 +45,12 @@
                 </div>
                 <div class="col-md-12 text-center">
                     <br>
-                    <p class="txt"><i>Sofía Margarita De León González</i></p>
-                    <p class="txt"><i>Sophie Travel® Agencia de Viajes.</i></p>
+                    <blockquote class="txt"><i>Sofía Margarita De León González</i></blockquote>
+                    <p class="txt"><strong>Sophie Travel &reg; Agencia de Viajes.</strong></p>
                 </div>
             </div>
         </div>
     </section>
-
-
+<?php include('Public/include/foot.php'); ?>
 </body>
 </html>

@@ -5,20 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestros Destinos - Sophie Travel | Agencia de viajes</title>
-    <meta name="description" content="Sophie Travel® es una agencia de viajes líder en su ramo">
-    <!-- BOOSTRAP -->
-    <link rel="stylesheet" href="Public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Public/css/owl.carousel.min.css">
-    <!-- STYLE -->
-    <link rel="stylesheet" href="Public/css/slide.css">
-    <link rel="stylesheet" href="Public/css/style.css?ver=1.0.0">
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- ICONS -->
-    <link rel="stylesheet" href="Public/css/ionicons.min.css">
+    <?php include('Public/include/head.php') ?>
 </head>
 <body>
+
+    <?php include('Public/include/nav.php') ?>
     <!-- ENCABEZADO -->
     <section id="encabezado_destinos" class="encabezado">
         <div class="row">
@@ -33,7 +24,7 @@
         <div class="container">
             <!-- FILA 1 DESTINOS -->
             <div class="row dest_row1">
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 col-sm-6 col-6 text-center">
                     <picture>
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-destino-mexico.webp" type="images/webp">
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-destino-mexico.png" type="images/png">
@@ -41,7 +32,7 @@
                     </picture>
                     <h2 class="subTit_base">México</h2>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 col-sm-6 col-6 text-center">
                     <picture>
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-destino-caribe.webp" type="images/webp">
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-destino-caribe.png" type="images/png">
@@ -49,7 +40,7 @@
                     </picture>
                     <h2 class="subTit_base">Caribe</h2>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 col-sm-6 col-6 text-center">
                     <picture>
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-destino-europa.webp" type="images/webp">
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-destino-europa.png" type="images/png">
@@ -57,7 +48,7 @@
                     </picture>
                     <h2 class="subTit_base">Europa</h2>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 col-sm-6 col-6 text-center">
                     <picture>
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-destino-medio-oriente.webp" type="images/webp">
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-destino-medio-oriente.png" type="images/png">
@@ -68,7 +59,7 @@
             </div>
             <!-- FILA 2 DESTINOS -->
             <div class="row dest_row2">
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 col-sm-6 col-6 text-center">
                     <picture>
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-destino-asia.webp" type="images/webp">
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-destino-asia.png" type="images/png">
@@ -76,7 +67,7 @@
                     </picture>
                     <h2 class="subTit_base">Asia</h2>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 col-sm-6 col-6 text-center">
                     <picture>
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-destino-estados-unidos.webp" type="images/webp">
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-destino-estados-unidos.png" type="images/png">
@@ -84,7 +75,7 @@
                     </picture>
                     <h2 class="subTit_base">Estados Unidos</h2>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 col-sm-6 col-6 text-center">
                     <picture>
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-destino-canada.webp" type="images/webp">
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-destino-canada.png" type="images/png">
@@ -92,7 +83,7 @@
                     </picture>
                     <h2 class="subTit_base">Canadá</h2>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 col-sm-6 col-6 text-center">
                     <picture>
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-destino-centro-america.webp" type="images/webp">
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-destino-centro-america.png" type="images/png">
@@ -103,7 +94,7 @@
             </div>
             <!-- FILA 3 DESTINOS -->
             <div class="row dest_row3">
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 col-sm-6 col-6 text-center">
                     <picture>
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-destino-sudamerica.webp" type="images/webp">
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-destino-sudamerica.png" type="images/png">
@@ -111,7 +102,7 @@
                     </picture>
                     <h2 class="subTit_base">Sudamérica</h2>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 col-sm-6 col-6 text-center">
                     <picture>
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-destino-japon.webp" type="images/webp">
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-destino-japon.png" type="images/png">
@@ -119,7 +110,7 @@
                     </picture>
                     <h2 class="subTit_base">Japón</h2>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 col-sm-6 col-6 text-center">
                     <picture>
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-destino-dubai.webp" type="images/webp">
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-destino-dubai.png" type="images/png">
@@ -127,7 +118,7 @@
                     </picture>
                     <h2 class="subTit_base">Dubái</h2>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 col-sm-6 col-6 text-center">
                     <picture>
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-destino-turquia.webp" type="images/webp">
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-destino-turquia.png" type="images/png">
@@ -139,11 +130,14 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="content_btn">
-                        <a class="btn_gen btn_principal" href="#">Contáctanos <i class="icon ion-ios-arrow-round-forward-outline"></i></a>
+                        <a class="btn_gen btn_principal" href="contacto.php">Contáctanos <i class="icon ion-ios-arrow-round-forward-outline"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-</body>
-</html>
+
+    
+    <?php include('Public/include/whatsapp.php') ?>
+    <?php include('Public/include/foot.php') ?>
+    <?php include('Public/include/footer.php') ?>

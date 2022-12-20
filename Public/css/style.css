@@ -12,7 +12,8 @@
     --color-azul-500:#2F5FB3;
     --color-amarillo-banner:#FBC022;
     --font-montserrat:'Montserrat', sans-serif;
-
+    --z-fixed: 100;
+    --header-height: 3rem;
 }
 html, body{
     overflow-x: hidden;
@@ -116,7 +117,7 @@ a{
     /* BTN SECUNDARIO*/
 .btn_secundario{
     font-weight: 500;
-    padding: 8px 42px 8px 24px;
+    padding: 8px 24px 8px 24px;
     background-color: var(--color-white);
     color: var(--color-azul-500);
 }
@@ -129,7 +130,23 @@ a{
     bottom: -5px;
     filter: blur(10px) brightness(0.95);
 }
+.home-slider .btn_secundario{
+    display: block;
+    width: 176px;
+} 
+
 .icon_airplane{
+    display: inline!important;
+    position: relative;
+    bottom: 0;
+    left: 4px;
+    width: 18px!important;
+    height: 10px!important;
+}
+
+
+
+/* .icon_airplane{
     position: absolute;
     top: 8px;
     right: 16px;
@@ -138,7 +155,7 @@ a{
     background-image: url("../images/icon_airplane.svg");
     background-position: center center;
     background-repeat: no-repeat;
-}
+} */
 
 .ion-ios-arrow-round-forward-outline{
     position: relative;
@@ -146,30 +163,12 @@ a{
     padding-left: 0.4rem;
     font-size: 1.5em;
 }
-.nav-item > a{ 
-    font-size: 1em;
-    font-weight: bold;
-    opacity: .7; 
-    color: var(--color-white)!important;
-}
-.active > a{
-    position: relative; 
-    opacity: 1; 
-    color: var(--color-white)!important;
-}
-.active > a::before{
-    position: absolute;
-    content: "";
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: var(--color-white);
-    left: 46%;
-    margin-top: 30px;
-}
+
 
 
 /* __HOMEPAGE__ */
+
+
     /* __HEADER */
 #header{
     position: absolute;
@@ -182,7 +181,7 @@ a{
 .contacto_menu{
     position: absolute;
     top: 16px;
-    right: 6px;
+    right: 32px;
     display: inline-block;
     width: auto;
 }
@@ -222,6 +221,104 @@ a.nav__logo::before{
     height: 28px;
     background-color:#ffffff;
 }
+.nav__list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+.nav__item > a{ 
+    font-size: 18px;
+    font-weight: bold;
+    opacity: .7; 
+    color: var(--color-white)!important;
+}
+.active > a{
+    position: relative; 
+    opacity: 1; 
+    color: var(--color-white)!important;
+}
+.active > a::before{
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    left: 46%;
+    margin-top: 30px;
+}
+.navbar .nav__list li.nav__item{
+    margin-left: 8px;
+}
+/*=============== NAV ===============*/
+.nav__toggle {
+font-size: 2rem;
+color: var(--color-white);
+cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+.nav__menu {
+    position: absolute;
+    background-color: var(--color-black);
+    top: -70vh;
+    left: -25%;
+    width: 99vw;
+    padding: 16px 0 32px 0;
+    transition: .4s;
+    z-index: 999;
+}
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    }
+.test-carousel .item {
+    min-height: 320px;
+}
+}
+
+  
+.nav__close {
+position: absolute;
+font-size: 1.5rem;
+top: 18px;
+right: 42px;
+color: var(--color-white);
+cursor: pointer;
+}
+
+/* show menu */
+.show-menu {
+top: 0;
+}
+
+/* Change background header */
+.scroll-header {
+background-color: var(--color-black);
+}
+
+/* Active link */
+.active-link {
+background: var(--color-white);
+color: transparent;
+-webkit-background-clip: text;
+background-clip: text;
+}
+  
+
+
+
+
+
+
+
+
+
 
 
     /*__SLIDER*/
@@ -240,14 +337,14 @@ a.nav__logo::before{
 }
 #vector_down_slider{
     position: absolute;
-    bottom: -2px;
-    width: auto;
+    bottom: -12px;
+    width: 100%;
     height: 135px;
 }
 .content_arrow_down_slider{
     text-align: center;
     position: absolute;
-    bottom: 12px;
+    bottom: 4px;
 }
 .icon_arrow_down_slider{
     font-size: 2.5em;
@@ -286,7 +383,7 @@ a.nav__logo::before{
     padding: 9px 19px!important;
     border-radius: 25px;
     position: absolute;
-    top: 0px;
+    top: 8px;
 }
 .cont_brand .owl-nav button.owl-prev{
     left: -80px;
@@ -402,16 +499,17 @@ section#sec_servicios{
     background-size: contain;
     background-repeat: no-repeat;
 }    
-#sec_ban_contacto .col_banner_img{
+/* #sec_ban_contacto .col_banner_img{
     padding: 0;    
-}
+} */
 .col_banner_img .banner{
     position: absolute;
     right: 0;
     content: "";
-    width: 316px;
-    height: 260px;
-    background-image: url('../images/sophie-travel-nos-encargamos-de-todo.png');
+    width: 100%;
+    height: 312px;
+    background-image: url(../images/sophie-travel-nos-encargamos-de-todo.png);
+    background-size: cover;
 }
 .col_banner_txt{
     background-color: var(--color-amarillo-banner);
@@ -419,16 +517,16 @@ section#sec_servicios{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 260px;
+    height: 312px;
     padding: 0px 120px 0px 24px;
     box-sizing: border-box;
 }
 .col_banner_txt .tit_bn{
-    font-size: 2em;
+    font-size: 2.8em;
     font-family: var(--color-white);
     color: var(--color-white);
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 1.1;
 }
 .col_banner_txt .caption{
     color: var(--color-white);
@@ -506,11 +604,14 @@ section#sec_servicios{
 .row_foot2 div:nth-child(2){
     text-align: right;
 }
+.max_foot_left{
+    max-width: 208px;
+}
 
 
 /* __CONTACTO__ */
 #encabezado_contacto{
-    background-image: url('../images/Sophia-travel-encabezado-contacto.webp');
+    background-image: url('../images/sophie-travel-encabezado-contacto.webp');
 }
 .encabezado{
     position: relative;
@@ -528,9 +629,9 @@ section#sec_servicios{
 .encabezado > div::before{
     position: absolute;
     content: "";
-    width: 100%;
+    width: 105%;
     height: 150px;
-    bottom: 0;
+    bottom: -1px;
 }
 .encabezado > div::before{
     background-image: url('../images/down-divider-bn.svg');
@@ -541,7 +642,7 @@ section#sec_servicios{
 
 /* __NOSOTROS__ */
 #encabezado_nosotros{
-    background-image: url('../images/Sophia-travel-encabezado-nosotros.webp');
+    background-image: url('../images/sophie-travel-encabezado-nosotros.webp');
 }
 #descripcion_nost{
     position: relative;
@@ -612,7 +713,7 @@ section#sec_servicios{
 
 /* __NUESTROS DESTINOS__ */
 #encabezado_destinos{
-    background-image: url('../images/Sophia-travel-encabezado-nuestros-destinos.webp');
+    background-image: url('../images/sophie-travel-encabezado-nuestros-destinos.webp');
 }
 #destinos{
     padding: 40px 0px 80px 0px;
@@ -640,7 +741,7 @@ section#sec_servicios{
 
 /* __PREGUNTAS FRECUENTES__ */
 #encabezado_preguntas{
-    background-image: url('../images/Sophia-travel-encabezado-preguntas-frecuentes.jpg');
+    background-image: url('../images/sophie-travel-encabezado-preguntas-frecuentes.jpg');
 }
 #preguntas{
     padding: 40px 0px 120px;
@@ -687,7 +788,7 @@ section#sec_servicios{
 
 /* __AVISO DE PRIVACIDAD__ */
 #encabezado_privacidad{
-    background-image: url('../images/Sophia-travel-encabezado-aviso-privacidad.jpg');
+    background-image: url('../images/sophie-travel-encabezado-aviso-privacidad.jpg');
 }
 #aviso{
     padding: 40px 0px 120px 0px;
@@ -757,6 +858,8 @@ section#sec_servicios{
 #formulario input[type=submit]{
     padding: 8px 24px;
     border-radius: 25px;
+    font-family: var(--font-montserrat);
+    font-size: 1em;
     margin-top: 16px;
     color:var(--color-white);
     background-color: var(--color-glicina);
@@ -838,13 +941,298 @@ section#sec_servicios{
 }
 
 
+/* __RESPONSIVE__ */
 
-/* __RESPONSIVE */
+    /* __MIN-WIDTH 1400 */
 @media all and (min-width:1400px){
     #vector_down_slider{
         position: absolute;
         bottom: -2px;
         width: 101%;
         height: auto;
+    }
+}
+
+    /* __MAX-WIDTH 1366 */
+@media all and (max-width:1366px){
+    .test-carousel .item {
+        min-height: 320px;
+    }
+    .cont_brand .owl-nav button.owl-prev {
+        left: -60px;
+    }
+    .cont_brand .owl-nav button.owl-next {
+        right: -60px;
+    }
+}
+
+    /* __MIN-WIDTH 1200 */
+@media all and (max-width:1200px){
+    .col_banner_img .banner, .col_banner_txt {
+        height: 264px;
+    }
+    .col_banner_txt .tit_bn {
+        font-size: 2em;
+    }
+    #vector_down_slider{
+        bottom: -32px;
+    }
+    .content_arrow_down_slider{
+        bottom: -12px;
+    }
+    .second_photo_right {
+        right: 28%;
+    }
+}
+
+/* __MAX-WIDTH 991 */
+@media all and (max-width:992px) and (min-width:768px){
+    .nav__item > a {
+        font-size: 1.1em;
+    }
+    .col_banner_img .banner, .col_banner_txt {
+        height: 198px;
+    }
+    .col_banner_txt .tit_bn {
+        font-size: 1.4em;
+    }
+    .second_photo_right {
+        right: 8%;
+        bottom: 100px;
+    }
+}
+
+
+    /* __MIN-WIDTH 768 */
+@media all and (min-width:768px){
+    .nav__toggle, .nav__close {
+        display: none;
+    }
+}
+
+    /* __MAX-WIDTH 768 */
+@media all and (max-width:767px){
+    .contacto_menu {
+        position: absolute;
+        top: 86%;
+        right: 0px;
+        display: table-cell;
+        text-align: center;
+        width: 100%;
+    }
+    .nav__menu {
+        left: -4%;
+    }
+    .contacto_menu a {
+        font-size: .9em;
+    }
+    .owl-carousel.home-slider .owl-nav {
+        top: 84%;
+    }
+    .owl-carousel.home-slider .owl-nav .owl-prev {
+        left: 30%;
+    }
+    .owl-carousel.home-slider .owl-nav .owl-next {
+        right: 30%;
+    }
+    #vector_down_slider {
+        height: 80px;
+        bottom: -13px;
+    }
+    .content_arrow_down_slider {
+        bottom: -8px;
+    }
+    .col_photo_bien {
+        text-align: center;
+    }
+    .second_photo_bien, .second_photo_left {
+        right: 60%;
+    }
+    .txt_max {
+        max-width: 100%;
+    }
+    section#sec_bienvenido{
+        background-size: auto;
+    }
+    #sec_bienvenido .row >div:nth-child(2){
+        margin-top: 60px;
+    }
+    #sec_servicios .row:nth-child(2) {
+        margin-bottom: 0px;
+    }
+    #sec_servicios .row .col-sm-4{
+        margin-bottom: 40px;
+    } 
+    #sec_opiniones .row .col-md-3{
+        margin-bottom: 24px;
+    }
+    #sec_certificaciones .row .tit_base{
+        text-align: center;
+        margin-bottom: 24px;
+    } 
+    .col_banner_img .banner{
+        height: 512px;
+        background-image: url('../images/sophie-travel-nos-encargamos-de-todo-md.png');
+    }
+    .col_banner_txt{
+        height: 260px;
+        text-align: center;
+        justify-content: flex-start;
+        border-radius: 0px 0px 250px 250px;
+        padding: 0px 32px 0px 32px;
+        margin-top: 512px;
+        background-color: #f5b819;
+    }
+    #sec_ban_contacto{
+         background-size: auto;
+    }
+    .max_foot_left {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .col_foot_txt {
+        text-align: center;
+    }
+    .list_footer {
+        padding-left: 0;
+        justify-content: center;
+    }
+    .list_footer li {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .row_foot2 div:nth-child(2) {
+        text-align: center;
+    }
+    /* MOVIL NOSOTROS */
+    #valores{
+        background-size: auto;
+    }
+    .desc_left {
+        margin-top: 100px;
+    }
+    .desc_row2, .desc_right {
+        margin-top: 0px;
+    }
+    .col_photo_der{
+        text-align: center;
+    }
+    .second_photo_right {
+        left: 56%;
+        bottom: -60px;
+    }
+    #descripcion_nost{
+        padding-bottom: 60px;
+    }
+    #valores .cont_valores{
+        padding: 0 12px;
+    }
+    .divider {
+        width: 100vw;
+        height: 80px;
+        margin-top: 0px;
+    }
+    /* DESTINOS */
+    #destinos{
+        background-size: auto;
+    }
+    .dest_row1, .dest_row2 {
+        margin-bottom: 0px;
+    }
+    .dest_row1 .col-6, .dest_row2 .col-6, .dest_row3 .col-6{
+        margin-bottom: 40px;
+    }
+    /* FAQS */
+    #preguntas {
+        background-size: auto;
+    }
+    /* FORMULARIO */
+    .formulario{
+        margin-top: 20px;
+    }
+    #form_contact{
+        background-size: auto;
+    }
+}
+
+
+/* __MAX-WIDTH 576 */
+@media all and (max-width:576px){
+    html, body{
+        overflow-x: hidden;
+    }
+    .owl-carousel.home-slider .slider-item .slider-text h2.sub_slider{
+        font-size: 2.1em;
+    }
+    .owl-carousel.home-slider .slider-item .slider-text h1{
+        font-size: 3.4em;
+    }
+    .owl-carousel.home-slider .owl-nav .owl-prev {
+        left: 16%;
+    }
+    .owl-carousel.home-slider .owl-nav .owl-next {
+        right: 16%;
+    }
+    #sec_marcas_caroucel{
+        overflow-x: hidden;
+    }
+    #vector_down_slider {
+        bottom: -18px;
+        background-image: url('../images/down-divider-slider.svg');
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: 180%;
+    }
+    section#sec_bienvenido{
+        padding: 60px 0px 120px 0px;
+    }
+    #sec_certificaciones .col-6{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .col_banner_img{
+        display: flex;
+        justify-content: center;
+    }
+    .col_banner_img .banner{
+        position: relative;
+        width: 316px;
+        height: 300px;
+    }
+    #sec_ban_contacto .row{
+        justify-content: center;
+    }
+    .col_banner_txt{
+        max-width: 316px;
+        height: 260px;
+        text-align: center;
+        justify-content: center;
+        border-radius: 0px 0px 250px 250px;
+        padding: 0px 16px 40px 16px;
+        margin-top: -1px;
+        background-color: #f5b819;
+    }
+    .col_banner_txt .tit_bn {
+        font-size: 1.5em;
+    }
+    #sec_ban_contacto{
+        padding: 60px 0px 0px 0px;
+    }
+    .list_footer li {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .cont_foot_contacto a:nth-child(1) {
+        margin-right: 0px;
+        display: block;
+        margin-bottom: 12px;
+    }
+}
+
+/* __MAX-WIDTH 480 */
+@media all and (max-width:480px){
+    .list_footer li {
+        margin-left: 4px;
+        margin-right: 4px;
     }
 }

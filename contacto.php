@@ -5,67 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Sophie Travel | Agencia de viajes</title>
-    <meta name="description" content="Sophie Travel® es una agencia de viajes líder en su ramo">
-    <!-- BOOSTRAP -->
-    <link rel="stylesheet" href="Public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Public/css/owl.carousel.min.css">
-    <!-- STYLE -->
-    <link rel="stylesheet" href="Public/css/slide.css">
-    <link rel="stylesheet" href="Public/css/style.css?ver=1.0.0">
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- ICONS -->
-    <link rel="stylesheet" href="Public/css/ionicons.min.css">
+    <?php include('Public/include/head.php') ?>
+    <!-- Google Captcha v3 -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-    <!-- HEADER -->
-<header class="header" id="header">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a href="#" class="nav__logo">
-                <picture>
-                    <source srcset="Public/images/logotipo-sophie-travel.webp" type="images/webp">
-                    <source srcset="Public/images/logotipo-sophie-travel.png" type="images/jpeg">
-                    <img src="Public/images/logotipo-sophie-travel.png" alt="logotipo sophie travel">
-                </picture>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <div class="row">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Destino</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">FAQ’s</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
-                        </li>
-                        <li>
-                            <div class="contacto_menu">
-                                <a href="mailto:contacto@sophie.travel"><i class="icon ion-ios-mail-outline"></i> contacto@sophie.travel</a>
-                                <a href="#"><i class="icon ion-ios-call-outline"></i> (442) 810 8085</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
-</header>
+    <?php include('Public/include/nav.php') ?>
+
     <!-- ENCABEZADO -->
     <section id="encabezado_contacto" class="encabezado">
         <div class="row">
@@ -82,10 +28,10 @@
                 <div class="col-md-5">
                     <h1 class="tit_base">Cotizaciones</h1>
                     <p class="txt">¿Tienes dudas de algún producto? Llena el siguiente formulario y nos pondremos a la brevedad conigo.</p>
-                    <p class="txt">O si lo prefieres llámanos o escríbenos a.</p>
+                    <p class="txt">O si lo prefieres llámanos o escríbenos a:</p>
                     <ul class="list_contact_form">
-                        <li><a href="#"><i class="icon ion-ios-mail-outline"></i> contacto@sophie.travel</a></li>
-                        <li><a href="#"><i class="icon ion-ios-call-outline"></i> (442) 810 8085</a></li>
+                        <li><a href="mailto:contacto@sophie.travel"><i class="icon ion-ios-mail-outline"></i> contacto@sophie.travel</a></li>
+                        <li><a href="tel:4428108085"><i class="icon ion-ios-call-outline"></i> (442) 810 8085</a></li>
                     </ul>
                 </div>
                 <div class="col-md-7">
@@ -107,7 +53,7 @@
                                 <!-- Grupo: Correo Electronico -->
                                 <div class="formulario__grupo" id="grupo__correo">
                                     <div class="formulario__grupo-input">
-                                        <input type="email" class="formulario__input" name="correo" id="correo" placeholder="mail">
+                                        <input type="email" class="formulario__input" name="correo" id="correo" placeholder="Email">
                                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                                     </div>
                                     <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
@@ -134,6 +80,7 @@
                                 <div class="formulario__mensaje" id="formulario__mensaje">
                                     <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor llena el formulario correctamente. </p>
                                 </div>
+                                <div class="g-recaptcha" data-sitekey="6LdadJQjAAAAAJdDgummFdUhiJJp6w-vCKMJxWt4"></div>
                                 <input type="submit" value="Enviar">
                                 <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
                             </div>
@@ -145,10 +92,6 @@
     </section>
     <script src="Public/js/form.js" type="text/javascript"></script>
 
-    <!-- JQUERY -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- MAIN -->
-    <script src="Public/js/main.js" type="text/javascript"></script>
-    <!-- <script src="Public/js/form.js" type="text/javascript"></script> -->
-</body>
-</html>
+<?php include('Public/include/whatsapp.php'); ?>
+<?php include('Public/include/foot.php'); ?>
+<?php include('Public/include/footer.php'); ?>

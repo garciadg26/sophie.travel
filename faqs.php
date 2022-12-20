@@ -5,20 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas frecuentes - Sophie Travel | Agencia de viajes</title>
-    <meta name="description" content="Sophie Travel® es una agencia de viajes líder en su ramo">
-    <!-- BOOSTRAP -->
-    <link rel="stylesheet" href="Public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Public/css/owl.carousel.min.css">
-    <!-- STYLE -->
-    <link rel="stylesheet" href="Public/css/slide.css">
-    <link rel="stylesheet" href="Public/css/style.css?ver=1.0.0">
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- ICONS -->
-    <link rel="stylesheet" href="Public/css/ionicons.min.css">
+    <?php include('Public/include/head.php'); ?>
 </head>
 <body>
+    <?php include('Public/include/nav.php') ?>
     <!-- ENCABEZADO -->
     <section id="encabezado_preguntas" class="encabezado">
         <div class="row">
@@ -169,15 +159,13 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="content_btn">
-                        <a class="btn_gen btn_principal" href="#">Contáctanos <i class="icon ion-ios-arrow-round-forward-outline"></i></a>
+                        <a class="btn_gen btn_principal" href="contacto.php">Contáctanos <i class="icon ion-ios-arrow-round-forward-outline"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-        <!-- JQUERY -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="Public/js/bootstrap.min.js" type="text/javascript"></script>
-</body>
-</html>
+<?php include('Public/include/whatsapp.php') ?>
+<?php include('Public/include/foot.php') ?>
+<?php include('Public/include/footer.php') ?>

@@ -5,21 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros - Sophie Travel | Agencia de viajes</title>
-    <meta name="description" content="Sophie Travel® es una agencia de viajes líder en su ramo">
-    <!-- BOOSTRAP -->
-    <link rel="stylesheet" href="Public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Public/css/owl.carousel.min.css">
-    <!-- STYLE -->
-    <link rel="stylesheet" href="Public/css/slide.css">
-    <link rel="stylesheet" href="Public/css/style.css?ver=1.0.0">
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- ICONS -->
-    <link rel="stylesheet" href="Public/css/ionicons.min.css">
+    <?php include('Public/include/head.php') ?>
 </head>
 <body>
-
+    <?php include('Public/include/nav.php') ?>
     <!-- ENCABEZADO -->
     <section id="encabezado_nosotros" class="encabezado">
         <div class="row">
@@ -56,14 +45,14 @@
             </div>
             <!-- DESC RIGHT -->
             <div class="row desc_row2">
-                <div class="col-md-4 offset-md-2 col_photo_der">
+                <div class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-6  ">
                     <article class="desc_right">
                         <p class="txt txt_max txt_desc">En Sophie Travel &reg;, ofrecemos a nuestros clientes servicios personalizados de alta calidad, aplicando nuestros conocimientos y experiencia para presentarles las mejores opciones de servicios de viaje, ya sea por placer o negocio, que se adapte a sus necesidades, ilusiones y desde luego a su presupuesto.</p>
                         <p class="txt txt_max txt_desc">Nos encargamos de todo, desde el comienzo del sueño hasta su regreso a casa, hacemos de su viaje una experiencia placentera e inolvidable para que lo disfrute al máximo y no tenga que preocuparse por nada.</p>
                         <p class="txt txt_max txt_desc">En tiempos de Covid, hemos dado el 100 y sacado adelante todos los viajes rezagados, por tal, le ofrecemos tranquilidad por cualquier contingencia, empatía, calidad humana y sobre todo la seguridad de que viva una experiencia maravillosa, con todos los protocolos implementados con la certificación internacional por la Wordl Travels & Tours Council, el sello Safe Travel, ofreciéndole un servicio personalizado con previa cita y los servicios mundialmente certificados para su seguridad.</p>
                     </article>
                 </div>
-                <div class="col-md-6 col_photo_der">
+                <div class="col-xl-6 col-lg-6 col-md-6 col_photo_der">
                     <picture>
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-servicios-personalizados.webp" type="images/webp">
                         <source srcset="Public/images/sophie-travel-agencia-de-viajes-servicios-personalizados.png" type="images/png">
@@ -79,44 +68,7 @@
         </div>
     </section>
 
-    <!-- CERTIFICACIONES -->
-    <section id="sec_certificaciones">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-4">
-                    <h1 class="tit_base">Certificaciones</h1>
-                </div>
-                <div class="col-md-2">
-                    <picture>
-                        <source srcset="Public/images/logotipo-afeet.webp" type="images/webp">
-                        <source srcset="Public/images/logotipo-afeet.jpg" type="images/jpeg">
-                        <img class="img-fluid" src="Public/images/logotipo-afeet.jpg" alt="Sophie Travel agencia de viajes certificación por afeet" loading="lazy">
-                    </picture>
-                </div>
-                <div class="col-md-2">
-                    <picture>
-                        <source srcset="Public/images/logotipo-safe-travels.webp" type="images/webp">
-                        <source srcset="Public/images/logotipo-safe-travels.jpg" type="images/jpeg">
-                        <img class="img-fluid" src="Public/images/logotipo-safe-travels.jpg" alt="Sophie Travel agencia de viajes certificación por safe travels" loading="lazy">
-                    </picture>
-                </div>
-                <div class="col-md-2">
-                    <picture>
-                        <source srcset="Public/images/logotipo-distintivo-programa-moderniza.webp" type="images/webp">
-                        <source srcset="Public/images/logotipo-distintivo-programa-moderniza.jpg" type="images/jpeg">
-                        <img class="img-fluid" src="Public/images/logotipo-distintivo-programa-moderniza.jpg" alt="Sophie Travel agencia de viajes distintivo por el programa moderniza" loading="lazy">
-                    </picture>
-                </div>
-                <div class="col-md-2">
-                    <picture>
-                        <source srcset="Public/images/logotipo-distintivo-programa-moderniza.webp" type="images/webp">
-                        <source srcset="Public/images/logotipo-distintivo-programa-moderniza.jpg" type="images/jpeg">
-                        <img class="img-fluid" src="Public/images/logotipo-registro-nacional-de-turismo.jpg" alt="Sophie Travel agencia de viajes con registro nacional de turismo" loading="lazy">
-                    </picture>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php include('Public/include/certificaciones.php') ?>
 
     <!-- DIVIDER -->
     <div class="divider"></div>
@@ -131,40 +83,40 @@
             </div>
             <!-- FILA 1 VALORES -->
             <div class="row valores_row1">
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="cont_valores">
                         <h4 class="subTit_base">Lealtad</h4>
                         <p class="txt">Felicidad y honor</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="cont_valores">
                         <h4 class="subTit_base">Calidad</h4>
                         <p class="txt">Ofrecer cada día un servicio superior</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="cont_valores">
                         <h4 class="subTit_base">Pasión</h4>
                         <p class="txt">Nos entregamos en todo lo que hacemos</p>
                     </div>
                 </div>
-            </div>
-            <!-- FILA 2 VALORES -->
-            <div class="row">
-                <div class="col-md-4">
+            
+                <!-- FILA 2 VALORES -->
+            
+                <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="cont_valores">
                         <h4 class="subTit_base">Trabajo en equipo</h4>
                         <p class="txt">Sumamos esfuerzos, multiplicamos logros</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="cont_valores">
                         <h4 class="subTit_base">Responsabilidad</h4>
                         <p class="txt">Calidad y obligación de responder a los actos propios y de otros, que suceda; depende de uno mismo</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="cont_valores">
                         <h4 class="subTit_base">Diversidad</h4>
                         <p class="txt">Capacitándonos constantemente</p>
@@ -174,5 +126,6 @@
         </div>
     </section>
 
-</body>
-</html>
+<?php include('Public/include/whatsapp.php') ?>
+<?php include('Public/include/foot.php') ?>
+<?php include('Public/include/footer.php') ?>

@@ -2,12 +2,14 @@ $(document).ready(function(){
     //CAROUCEL BRAND
     $('.brand-carousel').owlCarousel({
         loop:true,
+	    autoplay: true,
+        autoplayTimeout:2200,
         margin:10,
         nav:true,
         dots: false,
         responsive:{
-            0:{
-                items:1
+            100:{
+                items:2
             },
             600:{
                 items:3

@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sophia - travel</title>
+    <meta name="description" content="Sophie Travel® es una agencia de viajes líder en su ramo">
     <!-- BOOSTRAP -->
     <link rel="stylesheet" href="Public/css/bootstrap.min.css">
-    <!-- STILOS -->
-    <link rel="stylesheet" href="Public/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="Public/css/owl.carousel.min.css">
+    <!-- STYLE -->
+    <link rel="stylesheet" href="Public/css/slide.css?ver=1.2.0">
+    <link rel="stylesheet" href="Public/css/style.css?ver=1.1.20">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="Public/css/ionicons.min.css">
