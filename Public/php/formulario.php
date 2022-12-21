@@ -33,51 +33,60 @@
         //ENVIAMOS EL FORMULARIO
         echo('DATOS ENVIADOS CON EXITO: ' . $nombre . $correo . $telefono . $mensaje);
 
-        ob_start();   
-        //VALIDACIÓN CAPTCHA
-        $recaptcha = $_POST['g-recaptcha-response'];
+        if(!empty($_POST)){
 
 
-        if($recaptcha != ''){
-            $secret = "6LdadJQjAAAAANsGOcbV-f5_gB2nj8dAJwFdPCqI";
-            $ip = $_SERVER['REMOTE_ADDR']; 
-            $var = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$recaptcha&remoteip=$ip");
-            $array = json_decode($var, true);
-            if($array['success'])
-            {
-            //TRUE
-            //echo "soy robot";
-            
-            }else{
-        
-        
-            //HEADER('Content-type: application/json');
-            //header( "Location: ../gracias.html");
+            $nombre = $_POST["nombre"];
+            $correo = $_POST["correo"];
+            $telefono = $_POST["telefono"];
+            $asunto = 'Tienes un nuevo registro de: Sophie Travel'; 
+            $mensaje = $_POST["mensaje"];
+            $recaptcha = $_POST['g-recaptcha-response'];
+            $secret = "6LdRy5UjAAAAAOU5LWOdXNETvPHxPflF7D5aRDGs";
 
-            //$nombre = @trim(stripslashes($_POST['name'])); 
-            //$email = @trim(stripslashes($_POST['email'])); 
-            //$tel = @trim(stripslashes($_POST['tel'])); 
-            //$asunto = 'Tienes un nuevo registro de: Sophie'; 
-            //$mensaje = @trim(stripslashes($_POST['message'])); 
+            if(!$recaptcha){
+                echo "Por favor verifica el captcha";
+            } else{
+                $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$recaptcha");
+                var_dump($response);
+                $array = json_decode($response, true);
+                if($array["success"]){
+                    echo "<h2>Gracias</h2>";
 
-            $email_from = $correo;
+                    //ENVIAR AL FORMULARIO
+                    // $nombre = @trim(stripslashes($_POST['name'])); 
+                    // $email = @trim(stripslashes($_POST['email'])); 
+                    // $tel = @trim(stripslashes($_POST['tel'])); 
+                    // $asunto = 'Tienes un nuevo registro de: Doux Amour Reposteria'; 
+                    // $mensaje = @trim(stripslashes($_POST['message'])); 
 
-            $email_to = 'graphicrichart@gmail.com';
-            
+                    // $header = "Content-type: text/html; charset=".$encoding." \r\n";
+                    // $header .= "From: ".$nombre." <".$correo."> \r\n";
 
-            $body = 'Nombre: ' . $nombre . "\n\n" . 'Email: ' . $correo . "\n\n" . 'Teléfono: ' . $telefono . "\n\n" . 'Mensaje: ' . $mensaje . "\n\n";
+                    $email_from = $correo;
 
-            $success = @mail($email_to, $asunto, $body, 'From: <'.$email_from.'>');
-            
-            echo json_encode($status);
-            die;
+                    // Varios destinatarios
+                    $email_to = 'graphicrichart@gmail.com';
+                    /*$para  = 'graphicrichart@gmail.com' . ', '; // atención a la coma
+                    $para .= 'garcia_richgraphic@hotmail.com';*/
+                    
 
+
+                    $body = 'Nombre: ' . $nombre . "\n\n" . 'Email: ' . $correo . "\n\n" . 'Teléfono: ' . $telefono . "\n\n" . 'Asunto: ' . $asunto . "\n\n" . 'Mensaje: ' . $mensaje . "\n\n";
+
+                    $success = @mail($email_to, $asunto, $body, 'From: <'.$email_from.'>');
+                    
+                    echo json_encode($status);
+                    die;
+                    //FIN DEL FORMULARIO
+
+                } else{
+                    echo "<h3>Error al comprobar Captcha</h3>";
+                }
             }
-        }else{
-            echo "rellene todos los campos";
+
+
         }
-
-
 
     }
 

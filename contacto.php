@@ -80,7 +80,7 @@
                                 <div class="formulario__mensaje" id="formulario__mensaje">
                                     <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor llena el formulario correctamente. </p>
                                 </div>
-                                <div class="g-recaptcha" data-sitekey="6LdadJQjAAAAAJdDgummFdUhiJJp6w-vCKMJxWt4"></div>
+                                <div class="g-recaptcha" data-sitekey="6LdRy5UjAAAAAO0DvzoM5JrynToyXm0r7eVrbqNS"></div>
                                 <input type="submit" value="Enviar">
                                 <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
                             </div>
