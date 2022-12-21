@@ -53,7 +53,7 @@
             </html>
             ';
             $recaptcha = $_POST['g-recaptcha-response'];
-            $secret = "6LdadJQjAAAAANsGOcbV-f5_gB2nj8dAJwFdPCqI";
+            $secret = "6LdRy5UjAAAAAOU5LWOdXNETvPHxPflF7D5aRDGs";
 
             if(!$recaptcha){
                 echo "Por favor verifica el captcha";
@@ -76,13 +76,13 @@
                     $headers = "From: " . $correo . "\r\n";
                     $headers .= "Reply-To: ". $correo . "\r\n";
                     $headers .= "MIME-Version: 1.0\r\n";
-                    $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+                    $headers .= "Content-Type: text/html; charset=utf-8\r\n";
                     //$cabeceras .= 'From: <'.$email_from.'>' . "\r\n";
 
                     $email_from = $correo;
 
                     // Varios destinatarios
-                    $email_to = 'contacto@sophie.travel, graphicrichart@gmail.com, garcia_richgraphic@hotmail.com, alan@tiposlibres.com';
+                    $email_to = 'graphicrichart@gmail.com, garcia_richgraphic@hotmail.com';
                     /*$para  = 'graphicrichart@gmail.com' . ', '; // atención a la coma
                     $para .= 'garcia_richgraphic@hotmail.com';*/
                     

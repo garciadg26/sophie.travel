@@ -44,7 +44,7 @@
                                         <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre completo"> 
                                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                                     </div>
-                                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                                    <p class="formulario__input-error">El Nombre tiene que ser de 4 a 16 dígitos y solo puede contener letras.</p>
                                 </div>
                             </div>
                         </div>
@@ -66,7 +66,7 @@
                                         <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Whatsapp">
                                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                                     </div>
-                                    <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+                                    <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 12 dígitos.</p>
                                 </div>
                             </div>
                         </div>
@@ -80,7 +80,10 @@
                                 <div class="formulario__mensaje" id="formulario__mensaje">
                                     <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor llena el formulario correctamente. </p>
                                 </div>
-                                <div class="g-recaptcha" data-sitekey="6LdadJQjAAAAAJdDgummFdUhiJJp6w-vCKMJxWt4"></div>
+                                <div class="formulario__captcha" id="formulario__mensaje-captcha">
+                                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Captcha no verificado. </p>
+                                </div>
+                                <div class="g-recaptcha" data-sitekey="6LdRy5UjAAAAAO0DvzoM5JrynToyXm0r7eVrbqNS"></div>
                                 <input type="submit" value="Enviar">
                                 <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
                             </div>
@@ -90,7 +93,7 @@
             </div>
         </div>
     </section>
-    <script src="Public/js/form.js" type="text/javascript"></script>
+    <script type="text/javascript" src="Public/js/form.js?ver=1.2.0"></script>
 
 <?php include('Public/include/whatsapp.php'); ?>
 <?php include('Public/include/foot.php'); ?>

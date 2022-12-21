@@ -882,7 +882,7 @@ section#sec_servicios{
     font-size: 16px;
     opacity: 0;
 }
-.formulario__mensaje {
+.formulario__mensaje, .formulario__captcha{
 	height: 45px;
 	line-height: 45px;
 	background: #F66060;

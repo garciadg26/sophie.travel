@@ -73,64 +73,72 @@ inputs.forEach((input) => {
 formulario.addEventListener('submit', e=>{
     e.preventDefault();
 
-    // const terminos = document.getElementById('terminos');
-    if(campos.nombre && campos.correo && campos.telefono){
+    //VALIDAMOS SI SE PRECIONO EL CAPTCHA
+    var response = grecaptcha.getResponse();
 
-
-
-
-        document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
+    if(response.length == 0){
+        //NO VERIFICADO
+        document.getElementById('formulario__mensaje-captcha').classList.add('formulario__mensaje-activo');
         setTimeout(() => {
-            document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
+            document.getElementById('formulario__mensaje-captcha').classList.remove('formulario__mensaje-activo');
         }, 5000);
-
-        document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
-            icono.classList.remove('formulario__grupo-correcto');
-        });
-
-        let removerClase = document.querySelectorAll('.remover');
-
-        if(removerClase.length > 0){
-            for(let i = 0; i < removerClase.length; i++){
-                removerClase[i].parentNode.removeChild(removerClase[i]);
-            }
-        }
-    
-        //ENVIAMOS LOS DATOS A PHP
-        let datos = new FormData(formulario);
-        //creamos un objeto
-        let peticion = {
-            method:'POST',
-            body:datos,
-        }
-        fetch('Public/php/formulario.php', peticion)
-        .then(respuesta => respuesta.json())
-        .then(respuesta =>{
-    
-            for(const resultado in respuesta){
-                let padre = document.querySelector('#'+resultado);
-                padre.classList.add('resaltar');
-                let txt = document.createElement('p');
-                txt.classList.add('text-danger');
-                txt.classList.add('remover');
-                txt.innerHTML = respuesta[resultado];
-                document.querySelector('#'+resultado).insertAdjacentElement('afterend', txt);
-            }
-    
-        }).catch(error => console.log('Error', error));
-        //FIN DATOS PHP
-        formulario.reset();
-        // return true;
-
-      
     } else {
-        document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
-        setTimeout(() => {
-            document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
-        }, 5000);
+        //VERIFICADO
+        // const terminos = document.getElementById('terminos');
+        if(campos.nombre && campos.correo && campos.telefono){
+
+            document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
+            setTimeout(() => {
+                document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
+            }, 5000);
+
+            document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
+                icono.classList.remove('formulario__grupo-correcto');
+            });
+
+            let removerClase = document.querySelectorAll('.remover');
+
+            if(removerClase.length > 0){
+                for(let i = 0; i < removerClase.length; i++){
+                    removerClase[i].parentNode.removeChild(removerClase[i]);
+                }
+            }
+        
+            //ENVIAMOS LOS DATOS A PHP
+            let datos = new FormData(formulario);
+            //creamos un objeto
+            let peticion = {
+                method:'POST',
+                body:datos,
+            }
+            fetch('Public/php/formulario.php', peticion)
+            .then(respuesta => respuesta.json())
+            .then(respuesta =>{
+        
+                for(const resultado in respuesta){
+                    let padre = document.querySelector('#'+resultado);
+                    padre.classList.add('resaltar');
+                    let txt = document.createElement('p');
+                    txt.classList.add('text-danger');
+                    txt.classList.add('remover');
+                    txt.innerHTML = respuesta[resultado];
+                    document.querySelector('#'+resultado).insertAdjacentElement('afterend', txt);
+                }
+        
+            }).catch(error => console.log('Error', error));
+            //FIN DATOS PHP
+            formulario.reset();
+            // return true;
+
+        
+        } else {
+            document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+            setTimeout(() => {
+                document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
+            }, 5000);
+        }
+        //alert("Captcha verificado");
     }
-
-
 
 
 });
