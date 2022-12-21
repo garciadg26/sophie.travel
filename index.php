@@ -290,19 +290,19 @@
 <section id="sec_bienvenido">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-6 col_photo_bien">
+            <div class="col-md-6 col_photo_bien home__header">
                 <picture>
                     <source srcset="Public/images/sophie-travel-agencia-de-viajes.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-agencia-de-viajes.png" type="images/png">
                     <img src="Public/images/sophie-travel-agencia-de-viajes.png" alt="Sophie Travel agencia de viajes" loading="lazy">
                 </picture>
-                <picture class="second_photo_bien">
+                <picture class="second_photo_bien home__footer">
                     <source srcset="Public/images/sophie-travel-lider-en-el-ramo.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-lider-en-el-ramo.png" type="images/png">
                     <img src="Public/images/sophie-travel-lider-en-el-ramo.png" alt="Sophie Travel líder en el ramo de viajes" loading="lazy">
                 </picture>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 home__img">
                 <article>
                     <h3 class="tit">¡Bienvenido!</h3>
                     <p class="txt txt_max">Sophie Travel® somos una agencia de viajes líder en su ramo, especialistas en Lunas de Miel y viajes familiares alrededor del mundo y en continuo crecimiento, con presencia que se distingue por el servicio personalizado a sus clientes.</p>
@@ -325,7 +325,7 @@
         </div>
         <!-- PRIMERA FILA | SERVICIOS -->
         <div class="row text-center">
-            <div class="col-md-2 col-sm-4 col-6">
+            <div class="col-md-2 col-sm-4 col-6 home__photo1">
                 <picture>
                     <source srcset="Public/images/sophie-travel-luna-de-miel.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-luna-de-miel.png" type="images/png">
@@ -333,7 +333,7 @@
                 </picture>
                 <p class="subTit">Luna de miel</p>
             </div>
-            <div class="col-md-2 col-sm-4 col-6">
+            <div class="col-md-2 col-sm-4 col-6 home__photo2">
                 <picture>
                     <source srcset="Public/images/sophie-travel-viajes-personalizados.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-viajes-personalizados.png" type="images/png">
@@ -341,7 +341,7 @@
                 </picture>
                 <p class="subTit">Viajes personalizados</p>
             </div>
-            <div class="col-md-2 col-sm-4 col-6">
+            <div class="col-md-2 col-sm-4 col-6 home__photo3">
                 <picture>
                     <source srcset="Public/images/sophie-travel-vacaciones-familiares.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-vacaciones-familiares.png" type="images/png">
@@ -349,7 +349,7 @@
                 </picture>
                 <p class="subTit">Vacaciones familiares</p>
             </div>
-            <div class="col-md-2 col-sm-4 col-6">
+            <div class="col-md-2 col-sm-4 col-6 home__photo4">
                 <picture>
                     <source srcset="Public/images/sophie-travel-tours-y-circuitos.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-tours-y-circuitos.png" type="images/png">
@@ -357,7 +357,7 @@
                 </picture>
                 <p class="subTit">Tours y circuitos</p>
             </div>
-            <div class="col-md-2 col-sm-4 col-6">
+            <div class="col-md-2 col-sm-4 col-6 home__photo5">
                 <picture>
                     <source srcset="Public/images/sophie-travel-grupos.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-grupos.png" type="images/png">
@@ -365,7 +365,7 @@
                 </picture>
                 <p class="subTit">Grupos</p>
             </div>
-            <div class="col-md-2 col-sm-4 col-6">
+            <div class="col-md-2 col-sm-4 col-6 home__photo6">
                 <picture>
                     <source srcset="Public/images/sophie-travel-trenes.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-trenes.png" type="images/png">
@@ -376,7 +376,7 @@
         </div>
         <!-- SEGUNDA FILA | SERVICIOS -->
         <div class="row text-center">
-            <div class="col-md-2 col-sm-4 col-6">
+            <div class="col-md-2 col-sm-4 col-6 home__photo1">
                 <picture>
                     <source srcset="Public/images/sophie-travel-vuelos.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-vuelos.png" type="images/png">
@@ -384,7 +384,7 @@
                 </picture>
                 <p class="subTit">Vuelos</p>
             </div>
-            <div class="col-md-2 col-sm-4 col-6">
+            <div class="col-md-2 col-sm-4 col-6 home__photo2">
                 <picture>
                     <source srcset="Public/images/sophie-travel-cruceros.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-cruceros.png" type="images/png">
@@ -392,7 +392,7 @@
                 </picture>
                 <p class="subTit">Cruceros</p>
             </div>
-            <div class="col-md-2 col-sm-4 col-6">
+            <div class="col-md-2 col-sm-4 col-6 home__photo3">
                 <picture>
                     <source srcset="Public/images/sophie-travel-traslados.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-traslados.png" type="images/png">
@@ -400,7 +400,7 @@
                 </picture>
                 <p class="subTit">Translados</p>
             </div>
-            <div class="col-md-2 col-sm-4 col-6">
+            <div class="col-md-2 col-sm-4 col-6 home__photo4">
                 <picture>
                     <source srcset="Public/images/sophie-travel-eventos-deportivos.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-eventos-deportivos.png" type="images/png">
@@ -408,7 +408,7 @@
                 </picture>
                 <p class="subTit">Eventos deportivos</p>
             </div>
-            <div class="col-md-2 col-sm-4 col-6">
+            <div class="col-md-2 col-sm-4 col-6 home__photo5">
                 <picture>
                     <source srcset="Public/images/sophie-travel-hospedaje.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-hospedaje.png" type="images/png">
@@ -416,7 +416,7 @@
                 </picture>
                 <p class="subTit">Hospedaje</p>
             </div>
-            <div class="col-md-2 col-sm-4 col-6">
+            <div class="col-md-2 col-sm-4 col-6 home__photo6">
                 <picture>
                     <source srcset="Public/images/sophie-travel-nacional-e-internacional.webp" type="images/webp">
                     <source srcset="Public/images/sophie-travel-nacional-e-internacional.png" type="images/png">
@@ -523,7 +523,7 @@
                 <div>
                     <h2 class="tit_bn">Nos encargamos de todo, desde el comienzo del sueño hasta su regreso a casa.</h2>
                     <p class="caption">Hacemos de su viaje una experiencia placentera e inolvidable.</p>
-                    <div class="content_btn_banner">
+                    <div class="content_btn_banner discount__animate">
                         <a class="btn_gen btn_principal" href="contacto.php">Contáctanos <i class="icon ion-ios-arrow-round-forward-outline"></i></a>
                     </div>
                 </div>

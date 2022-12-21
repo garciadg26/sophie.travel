@@ -26,10 +26,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <h1 class="tit_base">Cotizaciones</h1>
-                    <p class="txt">¿Tienes dudas de algún producto? Llena el siguiente formulario y nos pondremos a la brevedad conigo.</p>
-                    <p class="txt">O si lo prefieres llámanos o escríbenos a:</p>
-                    <ul class="list_contact_form">
+                    <h1 class="tit_base home__photo1">Cotizaciones</h1>
+                    <p class="txt home__photo2">¿Tienes dudas de algún producto? Llena el siguiente formulario y nos pondremos a la brevedad conigo.</p>
+                    <p class="txt home__photo3">O si lo prefieres llámanos o escríbenos a:</p>
+                    <ul class="list_contact_form home__photo4">
                         <li><a href="mailto:contacto@sophie.travel"><i class="icon ion-ios-mail-outline"></i> contacto@sophie.travel</a></li>
                         <li><a href="tel:4428108085"><i class="icon ion-ios-call-outline"></i> (442) 810 8085</a></li>
                     </ul>
@@ -80,7 +80,7 @@
                                 <div class="formulario__mensaje" id="formulario__mensaje">
                                     <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor llena el formulario correctamente. </p>
                                 </div>
-                                <div class="g-recaptcha" data-sitekey="6LdRy5UjAAAAAO0DvzoM5JrynToyXm0r7eVrbqNS"></div>
+                                <div class="g-recaptcha" data-sitekey="6LdadJQjAAAAAJdDgummFdUhiJJp6w-vCKMJxWt4"></div>
                                 <input type="submit" value="Enviar">
                                 <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
                             </div>

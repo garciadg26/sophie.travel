@@ -41,8 +41,19 @@
             $telefono = $_POST["telefono"];
             $asunto = 'Tienes un nuevo registro de: Sophie Travel'; 
             $mensaje = $_POST["mensaje"];
+
+            $cabecera = '
+            <html>
+            <head>
+              <title>Sophie Travel Agencia de viajes</title>
+            </head>
+            <body>
+              <img src="http://sophie.travel/Public/images/fondo-mail.jpg" width="100%" height="auto">
+            </body>
+            </html>
+            ';
             $recaptcha = $_POST['g-recaptcha-response'];
-            $secret = "6LdRy5UjAAAAAOU5LWOdXNETvPHxPflF7D5aRDGs";
+            $secret = "6LdadJQjAAAAANsGOcbV-f5_gB2nj8dAJwFdPCqI";
 
             if(!$recaptcha){
                 echo "Por favor verifica el captcha";
@@ -60,21 +71,26 @@
                     // $asunto = 'Tienes un nuevo registro de: Doux Amour Reposteria'; 
                     // $mensaje = @trim(stripslashes($_POST['message'])); 
 
-                    // $header = "Content-type: text/html; charset=".$encoding." \r\n";
-                    // $header .= "From: ".$nombre." <".$correo."> \r\n";
+                    // Para enviar un correo HTML, debe establecerse la cabecera Content-type
+                    $headers = "From: $correo";
+                    $headers = "From: " . $correo . "\r\n";
+                    $headers .= "Reply-To: ". $correo . "\r\n";
+                    $headers .= "MIME-Version: 1.0\r\n";
+                    $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+                    //$cabeceras .= 'From: <'.$email_from.'>' . "\r\n";
 
                     $email_from = $correo;
 
                     // Varios destinatarios
-                    $email_to = 'graphicrichart@gmail.com';
+                    $email_to = 'contacto@sophie.travel, graphicrichart@gmail.com, garcia_richgraphic@hotmail.com, alan@tiposlibres.com';
                     /*$para  = 'graphicrichart@gmail.com' . ', '; // atención a la coma
                     $para .= 'garcia_richgraphic@hotmail.com';*/
                     
 
 
-                    $body = 'Nombre: ' . $nombre . "\n\n" . 'Email: ' . $correo . "\n\n" . 'Teléfono: ' . $telefono . "\n\n" . 'Asunto: ' . $asunto . "\n\n" . 'Mensaje: ' . $mensaje . "\n\n";
+                    $body = $cabecera . "\n\n" . 'Nombre: ' . $nombre . "\n\n" . '<br>Email: ' . $correo . "\n\n" . '<br>Teléfono: ' . $telefono . "\n\n" . '<br>Asunto: ' . $asunto . "\n\n" . '<br>Mensaje: ' . $mensaje . "\n\n";
 
-                    $success = @mail($email_to, $asunto, $body, 'From: <'.$email_from.'>');
+                    $success = @mail($email_to, $asunto, $body, $headers);
                     
                     echo json_encode($status);
                     die;
