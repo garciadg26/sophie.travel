@@ -7,7 +7,7 @@
     <!-- SCROLL REVEAL -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- MAIN -->
-    <script type="text/javascript" src="Public/js/main.js?ver=1.6.0" ></script>
+    <script type="text/javascript" src="Public/js/main.js?ver=1.7s.0" ></script>
     <script type="text/javascript" src="Public/js/caroucel.js?ver=1.3.0" ></script>
 
 </body>

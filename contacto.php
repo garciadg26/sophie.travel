@@ -83,7 +83,7 @@
                                 <div class="formulario__captcha" id="formulario__mensaje-captcha">
                                     <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Captcha no verificado. </p>
                                 </div>
-                                <div class="g-recaptcha" data-sitekey="6LdRy5UjAAAAAO0DvzoM5JrynToyXm0r7eVrbqNS"></div>
+                                <div class="g-recaptcha" data-sitekey="6LdadJQjAAAAAJdDgummFdUhiJJp6w-vCKMJxWt4"></div>
                                 <input type="submit" value="Enviar">
                                 <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
                             </div>
